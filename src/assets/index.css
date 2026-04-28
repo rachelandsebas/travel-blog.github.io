@@ -247,28 +247,29 @@ footer {
   margin-bottom: 50px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
-  text-align: center;
+  text-align: left;
 }
 
 .itinerary-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-right: 12px;
 }
 
 .itinerary-content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
 }
 
 .itinerary-content ul {
-  list-style: none;
-  padding: 0;
+  padding-left: 20px;
 }
 
 .itinerary-content li {
-  margin-bottom: 8px;
-  font-size: 1.05rem;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .itinerary-content strong {

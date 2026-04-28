@@ -145,10 +145,10 @@ function generateHomePage(posts, lang) {
   let itinerarySectionHtml = '';
   if (fs.existsSync(itineraryPath)) {
     const itineraryMd = fs.readFileSync(itineraryPath, 'utf-8');
-    const itineraryContent = marked.parse(itineraryMd);
+    let itineraryContent = marked.parse(itineraryMd);
+    itineraryContent = itineraryContent.replace(/<h2[^>]*>(.*?)<\/h2>/i, '<h2><span class="itinerary-icon">✈️</span> $1</h2>');
     itinerarySectionHtml = `
       <section class="itinerary">
-        <div class="itinerary-icon">✈️</div>
         <div class="itinerary-content">
           ${itineraryContent}
         </div>
