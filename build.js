@@ -3,6 +3,8 @@ const path = require('path');
 const { marked } = require('marked');
 const matter = require('gray-matter');
 
+const BASE_URL = process.env.BASE_URL || '';
+
 const SRC_DIR = path.join(__dirname, 'src');
 const DIST_DIR = path.join(__dirname, 'dist');
 const POSTS_DIR = path.join(SRC_DIR, 'posts');
@@ -62,15 +64,15 @@ function generatePostPages(posts, lang) {
   ensureDir(outDir);
 
   const assetPath = lang === 'en' ? '../' : '../../';
-  const siteRoot = lang === 'en' ? '/' : `/${lang}/`;
+  const siteRoot = BASE_URL + (lang === 'en' ? '/' : `/${lang}/`);
 
   posts.forEach(post => {
     // Find counterpart slug if available (for lang switcher)
     const counterpartLang = lang === 'en' ? 'es' : 'en';
     const counterpartPost = postsByLang[counterpartLang].find(p => p.slug === post.slug || p.counterpart === post.slug);
     
-    const enUrl = lang === 'en' ? '#' : (counterpartPost ? `/posts/${counterpartPost.slug}.html` : '/');
-    const esUrl = lang === 'es' ? '#' : (counterpartPost ? `/es/posts/${counterpartPost.slug}.html` : '/es/');
+    const enUrl = lang === 'en' ? '#' : (counterpartPost ? BASE_URL + `/posts/${counterpartPost.slug}.html` : BASE_URL + '/');
+    const esUrl = lang === 'es' ? '#' : (counterpartPost ? BASE_URL + `/es/posts/${counterpartPost.slug}.html` : BASE_URL + '/es/');
 
     let html = postTemplate
       .replace(/{{LANG}}/g, lang)
@@ -108,13 +110,15 @@ function generateHomePage(posts, lang) {
   ensureDir(outDir);
 
   const assetPath = lang === 'en' ? './' : '../';
-  const siteRoot = lang === 'en' ? '/' : `/${lang}/`;
+  const siteRoot = BASE_URL + (lang === 'en' ? '/' : `/${lang}/`);
+  const enUrl = BASE_URL + '/';
+  const esUrl = BASE_URL + '/es/';
   const heroTitle = lang === 'en' ? 'Wanderlust Diaries' : 'Diarios de Pasión por Viajar';
   const heroSubtitle = lang === 'en' ? 'Exploring the world, one minimalist step at a time.' : 'Explorando el mundo, un paso minimalista a la vez.';
 
   let postsHtml = '';
   posts.forEach(post => {
-    const postUrl = `${langPrefix}/posts/${post.slug}.html`;
+    const postUrl = BASE_URL + `${langPrefix}/posts/${post.slug}.html`;
     const imgSrc = post.cover_image && post.cover_image.startsWith('http') 
       ? post.cover_image 
       : (post.cover_image ? `${assetPath}${post.cover_image.replace(/^\//, '')}` : '');
@@ -146,7 +150,9 @@ function generateHomePage(posts, lang) {
     .replace(/{{ASSET_PATH}}/g, assetPath)
     .replace(/{{SITE_ROOT}}/g, siteRoot)
     .replace(/{{EN_ACTIVE}}/g, lang === 'en' ? 'active' : '')
-    .replace(/{{ES_ACTIVE}}/g, lang === 'es' ? 'active' : '');
+    .replace(/{{ES_ACTIVE}}/g, lang === 'es' ? 'active' : '')
+    .replace(/{{EN_URL}}/g, enUrl)
+    .replace(/{{ES_URL}}/g, esUrl);
 
   fs.writeFileSync(path.join(outDir, 'index.html'), html);
 }
