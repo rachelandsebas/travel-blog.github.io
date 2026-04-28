@@ -32,6 +32,20 @@ fs.cpSync(path.join(SRC_DIR, 'assets'), assetsDist, { recursive: true });
 const homeTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'home.html'), 'utf-8');
 const postTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'post.html'), 'utf-8');
 
+// Configure marked to handle local image paths with BASE_URL
+const renderer = new marked.Renderer();
+renderer.image = function(href, title, text) {
+  // If it's an external URL, leave it alone. Otherwise, prepend BASE_URL/assets/
+  const isAbsolute = href && (href.startsWith('http://') || href.startsWith('https://'));
+  const src = isAbsolute ? href : BASE_URL + '/' + href.replace(/^\//, '');
+  
+  let imgHtml = `<img src="${src}" alt="${text || ''}"`;
+  if (title) imgHtml += ` title="${title}"`;
+  imgHtml += ` />`;
+  return imgHtml;
+};
+marked.use({ renderer });
+
 // Read and parse all posts
 const postsData = [];
 const files = fs.readdirSync(POSTS_DIR).filter(file => file.endsWith('.md'));
