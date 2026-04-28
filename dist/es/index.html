@@ -10,9 +10,23 @@
 </head>
 
 <body>
+  
+    <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+    <div class="burger-menu" id="burger-menu">
+      <button class="burger-menu-close" id="burger-menu-close">&times;</button>
+      <h2>Mis Viajes</h2>
+      <ul class="burger-menu-list">
+        <li><a href="/es/trips/asia-2026/index.html">Asia 2026</a></li>
+      </ul>
+    </div>
+  
+
   <div class="container">
     <nav>
-      <a href="/es/" class="logo">S&R Travel Blog</a>
+      <div class="nav-left">
+        <button class="burger-menu-btn" id="burger-menu-btn">&#9776;</button>
+        <a href="/es/" class="logo">S&R Travel Blog</a>
+      </div>
       <div class="lang-switch">
         <a href="/" class="">EN</a>
         <a href="/es/" class="active">ES</a>
@@ -30,10 +44,10 @@
         <div class="itinerary-content">
           <h2><span class="itinerary-icon">✈️</span> Itirerario Viajero</h2>
 <ul>
-<li><strong>4 - 10 de Julio:</strong> Sebastian en Corea del Sur (ICML 2026)</li>
-<li><strong>11 - 20 de Julio:</strong> Sebastian en China (IMO 2026)</li>
-<li><strong>19 - 24 de Julio:</strong> Sebastian &amp; Rachel en China (Shanghai &amp; Beijing)</li>
-<li><strong>25 de Julio - 3 de Agosto:</strong> Sebastian &amp; Rachel en Japón (Osaka, Kioto, Hiroshima, Tokio)</li>
+<li><strong>4 - 10 de Julio:</strong> Sebastián en Corea del Sur (ICML 2026)</li>
+<li><strong>11 - 20 de Julio:</strong> Sebastián en China (IMO 2026)</li>
+<li><strong>19 - 24 de Julio:</strong> Sebastián &amp; Rachel en China (Shanghai &amp; Beijing)</li>
+<li><strong>25 de Julio - 3 de Agosto:</strong> Sebastián &amp; Rachel en Japón (Osaka, Kioto, Hiroshima, Tokio)</li>
 </ul>
 
         </div>
@@ -43,7 +57,7 @@
       <section class="posts-grid">
         
       <a href="/es/posts/shanghai-es.html" class="post-card theme-china">
-        <img src="../assets/images/shanghai.jpeg" alt="Día 1 en Shanghái" class="post-card-img">
+        <img src="/assets/images/shanghai.jpeg" alt="Día 1 en Shanghái" class="post-card-img">
         <div class="post-card-content">
           <div class="post-meta">
             <span>2026-04-28</span>
@@ -91,12 +105,30 @@
       </a>
     
       </section>
+
+      
+    <section class="timeline">
+      <h2>Línea de Tiempo del Viaje</h2>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+      <a href="/es/trips/asia-2026/index.html" class="timeline-item">
+        <div class="timeline-circle" style="background-image: url('/assets/images/shanghai.jpeg')"></div>
+        <div class="timeline-title">Asia 2026</div>
+        <div class="timeline-date">2026-04-01</div>
+      </a>
+    
+      </div>
+    </section>
+  
     </main>
 
     <footer>
       &copy; 2026 Travel Blog. All rights reserved.
     </footer>
   </div>
+
+  <script src="../assets/main.js"></script>
 </body>
 
 </html>

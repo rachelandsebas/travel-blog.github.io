@@ -10,9 +10,14 @@
 </head>
 
 <body class="theme-{{THEME}}">
+  {{BURGER_MENU}}
+
   <div class="container">
     <nav>
-      <a href="{{SITE_ROOT}}" class="logo">S&R Travel Blog</a>
+      <div class="nav-left">
+        <button class="burger-menu-btn" id="burger-menu-btn">&#9776;</button>
+        <a href="{{SITE_ROOT}}" class="logo">S&R Travel Blog</a>
+      </div>
       <div class="lang-switch">
         <a href="{{EN_URL}}" class="{{EN_ACTIVE}}">EN</a>
         <a href="{{ES_URL}}" class="{{ES_ACTIVE}}">ES</a>
@@ -41,6 +46,8 @@
       &copy; 2026 Travel Blog. All rights reserved.
     </footer>
   </div>
+
+  <script src="{{ASSET_PATH}}assets/main.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S&R Travel Blog</title>
-  <meta name="description" content="A minimalist travel blog covering adventures around the world.">
+  <title>{{TRIP_TITLE}} | S&R Travel Blog</title>
+  <meta name="description" content="Posts for the trip: {{TRIP_TITLE}}">
   <link rel="stylesheet" href="{{ASSET_PATH}}assets/index.css">
 </head>
 
@@ -26,17 +26,13 @@
 
     <main>
       <section class="hero">
-        <h1>{{HERO_TITLE}}</h1>
-        <p>{{HERO_SUBTITLE}}</p>
+        <h1>{{TRIP_TITLE}}</h1>
+        <p>{{TRIP_DATE}}</p>
       </section>
-
-      {{ITINERARY_SECTION}}
 
       <section class="posts-grid">
         {{POSTS}}
       </section>
-
-      {{TIMELINE_SECTION}}
     </main>
 
     <footer>

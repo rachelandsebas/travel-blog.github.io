@@ -10,9 +10,23 @@
 </head>
 
 <body class="theme-china">
+  
+    <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+    <div class="burger-menu" id="burger-menu">
+      <button class="burger-menu-close" id="burger-menu-close">&times;</button>
+      <h2>Mis Viajes</h2>
+      <ul class="burger-menu-list">
+        <li><a href="/es/trips/asia-2026/index.html">Asia 2026</a></li>
+      </ul>
+    </div>
+  
+
   <div class="container">
     <nav>
-      <a href="/es/" class="logo">S&R Travel Blog</a>
+      <div class="nav-left">
+        <button class="burger-menu-btn" id="burger-menu-btn">&#9776;</button>
+        <a href="/es/" class="logo">S&R Travel Blog</a>
+      </div>
       <div class="lang-switch">
         <a href="/posts/beijing-nights-en.html" class="">EN</a>
         <a href="#" class="active">ES</a>
@@ -50,6 +64,8 @@
       &copy; 2026 Travel Blog. All rights reserved.
     </footer>
   </div>
+
+  <script src="../../assets/main.js"></script>
 </body>
 
 </html>

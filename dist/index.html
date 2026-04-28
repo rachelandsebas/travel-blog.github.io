@@ -10,9 +10,23 @@
 </head>
 
 <body>
+  
+    <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+    <div class="burger-menu" id="burger-menu">
+      <button class="burger-menu-close" id="burger-menu-close">&times;</button>
+      <h2>My Trips</h2>
+      <ul class="burger-menu-list">
+        <li><a href="/trips/asia-2026/index.html">Asia 2026</a></li>
+      </ul>
+    </div>
+  
+
   <div class="container">
     <nav>
-      <a href="/" class="logo">S&R Travel Blog</a>
+      <div class="nav-left">
+        <button class="burger-menu-btn" id="burger-menu-btn">&#9776;</button>
+        <a href="/" class="logo">S&R Travel Blog</a>
+      </div>
       <div class="lang-switch">
         <a href="/" class="active">EN</a>
         <a href="/es/" class="">ES</a>
@@ -43,7 +57,7 @@
       <section class="posts-grid">
         
       <a href="/posts/shanghai-en.html" class="post-card theme-china">
-        <img src="./assets/images/shanghai.jpeg" alt="Day 1 in Shanghai" class="post-card-img">
+        <img src="/assets/images/shanghai.jpeg" alt="Day 1 in Shanghai" class="post-card-img">
         <div class="post-card-content">
           <div class="post-meta">
             <span>2026-04-28</span>
@@ -91,12 +105,30 @@
       </a>
     
       </section>
+
+      
+    <section class="timeline">
+      <h2>Journey Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+      <a href="/trips/asia-2026/index.html" class="timeline-item">
+        <div class="timeline-circle" style="background-image: url('/assets/images/shanghai.jpeg')"></div>
+        <div class="timeline-title">Asia 2026</div>
+        <div class="timeline-date">2026-04-01</div>
+      </a>
+    
+      </div>
+    </section>
+  
     </main>
 
     <footer>
       &copy; 2026 Travel Blog. All rights reserved.
     </footer>
   </div>
+
+  <script src="./assets/main.js"></script>
 </body>
 
 </html>
