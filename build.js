@@ -160,9 +160,12 @@ function getTimelineHtml(lang) {
   return `
     <section class="timeline">
       <h2>${sectionTitle}</h2>
-      <div class="timeline-container">
-        <div class="timeline-line"></div>
-        ${items}
+      <div class="timeline-wrapper">
+        <button class="timeline-nav timeline-nav-left" id="timeline-prev" aria-label="Previous trips">&#10094;</button>
+        <div class="timeline-container" id="timeline-container">
+          ${items}
+        </div>
+        <button class="timeline-nav timeline-nav-right" id="timeline-next" aria-label="Next trips">&#10095;</button>
       </div>
     </section>
   `;
