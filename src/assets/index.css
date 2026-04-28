@@ -331,20 +331,58 @@ footer {
 }
 
 .burger-menu-list {
-  list-style: none;
-  padding: 0;
   flex-grow: 1;
   overflow-y: auto;
 }
 
-.burger-menu-list li {
+.burger-menu-year {
+  margin-bottom: 20px;
+}
+
+.burger-menu-year summary {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-bottom: 10px;
+  list-style: none; /* Hide default arrow in some browsers */
+}
+
+.burger-menu-year summary::-webkit-details-marker {
+  display: none; /* Hide default arrow in webkit */
+}
+
+.burger-menu-year summary::after {
+  content: '+';
+  float: right;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.burger-menu-year[open] summary::after {
+  content: '-';
+}
+
+.burger-menu-year ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--border-color);
+  margin-left: 5px;
+}
+
+.burger-menu-year li {
   margin-bottom: 15px;
+}
+
+.burger-menu-year li:last-child {
+  margin-bottom: 0;
 }
 
 .burger-menu-list a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   transition: color 0.2s ease;
 }
 

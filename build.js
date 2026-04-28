@@ -61,46 +61,53 @@ marked.use({ renderer });
 const tripsByLang = { en: [], es: [] };
 const postsByLang = { en: [], es: [] };
 
-// Read and parse all trips and posts
-const tripFolders = fs.readdirSync(POSTS_DIR).filter(f => fs.statSync(path.join(POSTS_DIR, f)).isDirectory());
+// Read and parse all years and trips
+const yearFolders = fs.readdirSync(POSTS_DIR).filter(f => fs.statSync(path.join(POSTS_DIR, f)).isDirectory());
 
-for (const tripSlug of tripFolders) {
-  const tripDir = path.join(POSTS_DIR, tripSlug);
-  const files = fs.readdirSync(tripDir);
+for (const yearStr of yearFolders) {
+  const yearDir = path.join(POSTS_DIR, yearStr);
+  const tripFolders = fs.readdirSync(yearDir).filter(f => fs.statSync(path.join(yearDir, f)).isDirectory());
+  
+  for (const tripSlug of tripFolders) {
+    const tripDir = path.join(yearDir, tripSlug);
+    const files = fs.readdirSync(tripDir);
 
-  // Process Meta files
-  const processMeta = (lang) => {
-    const metaFile = path.join(tripDir, `_meta-${lang}.md`);
-    if (fs.existsSync(metaFile)) {
-      const content = fs.readFileSync(metaFile, 'utf-8');
-      const parsed = matter(content);
-      tripsByLang[lang].push({
-        ...parsed.data,
-        slug: tripSlug,
-        htmlContent: marked.parse(parsed.content)
-      });
-    }
-  };
-  processMeta('en');
-  processMeta('es');
-
-  // Process Posts
-  for (const file of files) {
-    if (!file.endsWith('.md') || file.startsWith('_meta-')) continue;
-    
-    const content = fs.readFileSync(path.join(tripDir, file), 'utf-8');
-    const parsed = matter(content);
-    const htmlContent = marked.parse(parsed.content);
-    
-    const postData = {
-      ...parsed.data,
-      htmlContent,
-      slug: file.replace('.md', ''),
-      tripSlug: tripSlug
+    // Process Meta files
+    const processMeta = (lang) => {
+      const metaFile = path.join(tripDir, `_meta-${lang}.md`);
+      if (fs.existsSync(metaFile)) {
+        const content = fs.readFileSync(metaFile, 'utf-8');
+        const parsed = matter(content);
+        tripsByLang[lang].push({
+          ...parsed.data,
+          slug: tripSlug,
+          year: yearStr,
+          htmlContent: marked.parse(parsed.content)
+        });
+      }
     };
-    
-    if (parsed.data.lang === 'en') postsByLang.en.push(postData);
-    if (parsed.data.lang === 'es') postsByLang.es.push(postData);
+    processMeta('en');
+    processMeta('es');
+
+    // Process Posts
+    for (const file of files) {
+      if (!file.endsWith('.md') || file.startsWith('_meta-')) continue;
+      
+      const content = fs.readFileSync(path.join(tripDir, file), 'utf-8');
+      const parsed = matter(content);
+      const htmlContent = marked.parse(parsed.content);
+      
+      const postData = {
+        ...parsed.data,
+        htmlContent,
+        slug: file.replace('.md', ''),
+        tripSlug: tripSlug,
+        year: yearStr
+      };
+      
+      if (parsed.data.lang === 'en') postsByLang.en.push(postData);
+      if (parsed.data.lang === 'es') postsByLang.es.push(postData);
+    }
   }
 }
 
@@ -116,11 +123,25 @@ tripsByLang.es.sort((a, b) => new Date(b.date) - new Date(a.date));
 function getBurgerMenuHtml(lang, currentPath) {
   const trips = tripsByLang[lang];
   const title = lang === 'en' ? 'My Trips' : 'Mis Viajes';
-  let menuItems = '';
   
+  const groupedTrips = {};
   trips.forEach(trip => {
-    const tripUrl = BASE_URL + (lang === 'en' ? `/trips/${trip.slug}/index.html` : `/es/trips/${trip.slug}/index.html`);
-    menuItems += `<li><a href="${tripUrl}">${trip.title}</a></li>`;
+    if (!groupedTrips[trip.year]) {
+      groupedTrips[trip.year] = [];
+    }
+    groupedTrips[trip.year].push(trip);
+  });
+
+  const years = Object.keys(groupedTrips).sort((a, b) => b - a);
+
+  let menuItems = '';
+  years.forEach(year => {
+    menuItems += `<details class="burger-menu-year" open><summary>${year}</summary><ul>`;
+    groupedTrips[year].forEach(trip => {
+      const tripUrl = BASE_URL + (lang === 'en' ? `/trips/${trip.slug}/index.html` : `/es/trips/${trip.slug}/index.html`);
+      menuItems += `<li><a href="${tripUrl}">${trip.title}</a></li>`;
+    });
+    menuItems += `</ul></details>`;
   });
 
   return `
@@ -128,9 +149,9 @@ function getBurgerMenuHtml(lang, currentPath) {
     <div class="burger-menu" id="burger-menu">
       <button class="burger-menu-close" id="burger-menu-close">&times;</button>
       <h2>${title}</h2>
-      <ul class="burger-menu-list">
+      <div class="burger-menu-list">
         ${menuItems}
-      </ul>
+      </div>
     </div>
   `;
 }

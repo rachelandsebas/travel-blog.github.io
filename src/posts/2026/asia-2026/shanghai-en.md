@@ -5,7 +5,7 @@ lang: "en"
 country: "China"
 theme: "china"
 excerpt: "Arrival in Shanghai and first impressions of this megacity."
-cover_image: "assets/images/asia-2026/shanghai.jpeg"
+cover_image: "assets/images/2026/asia-2026/shanghai.jpeg"
 counterpart: "shanghai-es"
 ---
 
@@ -17,13 +17,13 @@ Walking through the Bund is like stepping back in time. The colonial-era buildin
 
 The Bund was interesting.
 
-![The Bund](assets/images/asia-2026/shanghai-bund.jpg)
+![The Bund](assets/images/2026/asia-2026/shanghai-bund.jpg)
 
 ## The Botanical Gardens
 
 They were also interesting.
 
-![The Botanical Gardens](assets/images/asia-2026/shanghai-botanical-garden.jpg)
+![The Botanical Gardens](assets/images/2026/asia-2026/shanghai-botanical-garden.jpg)
 
 ## Must-Do in Shanghai
 - Visit the Bund.

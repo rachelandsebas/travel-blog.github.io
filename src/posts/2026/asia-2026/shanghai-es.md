@@ -5,7 +5,7 @@ lang: "es"
 country: "China"
 theme: "china"
 excerpt: "Llegada a Shanghái y primeras impresiones de esta megaciudad."
-cover_image: "assets/images/asia-2026/shanghai.jpeg"
+cover_image: "assets/images/2026/asia-2026/shanghai.jpeg"
 counterpart: "shanghai-en"
 ---
 
@@ -17,13 +17,13 @@ Caminar por el Bund es como retroceder en el tiempo. Los edificios de la época 
 
 El Bund fue interesante.
 
-![El Bund](assets/images/asia-2026/shanghai-bund.jpg)
+![El Bund](assets/images/2026/asia-2026/shanghai-bund.jpg)
 
 ## El Jardín Botánico
 
 El Jardín Botánico también fue interesante.
 
-![El Jardín Botánico](assets/images/asia-2026/shanghai-botanical-garden.jpg)
+![El Jardín Botánico](assets/images/2026/asia-2026/shanghai-botanical-garden.jpg)
 
 ## Qué hacer en Shanghái
 - Visitar el Bund.
