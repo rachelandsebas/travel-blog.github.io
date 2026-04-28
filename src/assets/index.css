@@ -239,6 +239,42 @@ footer {
   border-top: 1px solid var(--border-color);
 }
 
+/* Itinerary Section */
+.itinerary {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.itinerary-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.itinerary-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.itinerary-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.itinerary-content li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.itinerary-content strong {
+  color: var(--primary-color);
+}
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 2rem; }
   .post-header h1 { font-size: 2.2rem; }

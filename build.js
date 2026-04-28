@@ -34,7 +34,7 @@ const postTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'post.html'), 'utf
 
 // Configure marked to handle local image paths with BASE_URL
 const renderer = new marked.Renderer();
-renderer.image = function(token) {
+renderer.image = function (token) {
   let href, title, text;
   if (typeof token === 'object' && token !== null && 'href' in token) {
     href = token.href;
@@ -49,7 +49,7 @@ renderer.image = function(token) {
   // If it's an external URL, leave it alone. Otherwise, prepend BASE_URL/
   const isAbsolute = href && (typeof href === 'string') && (href.startsWith('http://') || href.startsWith('https://'));
   const src = isAbsolute ? href : BASE_URL + '/' + (href ? href.replace(/^\//, '') : '');
-  
+
   let imgHtml = `<img src="${src}" alt="${text || ''}"`;
   if (title) imgHtml += ` title="${title}"`;
   imgHtml += ` />`;
@@ -65,7 +65,7 @@ for (const file of files) {
   const content = fs.readFileSync(path.join(POSTS_DIR, file), 'utf-8');
   const parsed = matter(content);
   const htmlContent = marked.parse(parsed.content);
-  
+
   postsData.push({
     ...parsed.data,
     htmlContent,
@@ -95,7 +95,7 @@ function generatePostPages(posts, lang) {
     // Find counterpart slug if available (for lang switcher)
     const counterpartLang = lang === 'en' ? 'es' : 'en';
     const counterpartPost = postsByLang[counterpartLang].find(p => p.slug === post.slug || p.counterpart === post.slug);
-    
+
     const enUrl = lang === 'en' ? '#' : (counterpartPost ? BASE_URL + `/posts/${counterpartPost.slug}.html` : BASE_URL + '/');
     const esUrl = lang === 'es' ? '#' : (counterpartPost ? BASE_URL + `/es/posts/${counterpartPost.slug}.html` : BASE_URL + '/es/');
 
@@ -138,18 +138,33 @@ function generateHomePage(posts, lang) {
   const siteRoot = BASE_URL + (lang === 'en' ? '/' : `/${lang}/`);
   const enUrl = BASE_URL + '/';
   const esUrl = BASE_URL + '/es/';
-  const heroTitle = lang === 'en' ? 'Wanderlust Diaries' : 'Diarios de Pasión por Viajar';
-  const heroSubtitle = lang === 'en' ? 'Exploring the world, one minimalist step at a time.' : 'Explorando el mundo, un paso minimalista a la vez.';
+  const heroTitle = lang === 'en' ? 'S&R Travel Blog' : 'S&R Blog Viajero';
+  const heroSubtitle = lang === 'en' ? 'Exploring the world, one city at a time.' : 'Explorando el mundo, una ciudad a la vez.';
+
+  const itineraryPath = path.join(SRC_DIR, `itinerary-${lang}.md`);
+  let itinerarySectionHtml = '';
+  if (fs.existsSync(itineraryPath)) {
+    const itineraryMd = fs.readFileSync(itineraryPath, 'utf-8');
+    const itineraryContent = marked.parse(itineraryMd);
+    itinerarySectionHtml = `
+      <section class="itinerary">
+        <div class="itinerary-icon">✈️</div>
+        <div class="itinerary-content">
+          ${itineraryContent}
+        </div>
+      </section>
+    `;
+  }
 
   let postsHtml = '';
   posts.forEach(post => {
     const postUrl = BASE_URL + `${langPrefix}/posts/${post.slug}.html`;
-    const imgSrc = post.cover_image && post.cover_image.startsWith('http') 
-      ? post.cover_image 
+    const imgSrc = post.cover_image && post.cover_image.startsWith('http')
+      ? post.cover_image
       : (post.cover_image ? `${assetPath}${post.cover_image.replace(/^\//, '')}` : '');
 
-    const coverImage = imgSrc 
-      ? `<img src="${imgSrc}" alt="${post.title}" class="post-card-img">` 
+    const coverImage = imgSrc
+      ? `<img src="${imgSrc}" alt="${post.title}" class="post-card-img">`
       : '';
 
     postsHtml += `
@@ -171,6 +186,7 @@ function generateHomePage(posts, lang) {
     .replace(/{{LANG}}/g, lang)
     .replace(/{{HERO_TITLE}}/g, heroTitle)
     .replace(/{{HERO_SUBTITLE}}/g, heroSubtitle)
+    .replace(/{{ITINERARY_SECTION}}/g, itinerarySectionHtml)
     .replace(/{{POSTS}}/g, postsHtml)
     .replace(/{{ASSET_PATH}}/g, assetPath)
     .replace(/{{SITE_ROOT}}/g, siteRoot)

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{LANG}}">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Blog</title>
+  <title>S&R Travel Blog</title>
   <meta name="description" content="A minimalist travel blog covering adventures around the world.">
   <link rel="stylesheet" href="{{ASSET_PATH}}assets/index.css">
 </head>
+
 <body>
   <div class="container">
     <nav>
-      <a href="{{SITE_ROOT}}" class="logo">Wanderlust</a>
+      <a href="{{SITE_ROOT}}" class="logo">S&R Travel Blog</a>
       <div class="lang-switch">
         <a href="{{EN_URL}}" class="{{EN_ACTIVE}}">EN</a>
         <a href="{{ES_URL}}" class="{{ES_ACTIVE}}">ES</a>
@@ -23,6 +25,8 @@
         <p>{{HERO_SUBTITLE}}</p>
       </section>
 
+      {{ITINERARY_SECTION}}
+
       <section class="posts-grid">
         {{POSTS}}
       </section>
@@ -33,4 +37,5 @@
     </footer>
   </div>
 </body>
+
 </html>
