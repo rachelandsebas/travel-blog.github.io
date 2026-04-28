@@ -226,6 +226,16 @@ function generatePostPages(lang) {
       .replace(/{{ES_URL}}/g, esUrl)
       .replace(/{{BURGER_MENU}}/g, getBurgerMenuHtml(lang));
 
+    // Back to Trip link
+    const trip = tripsByLang[lang].find(t => t.slug === post.tripSlug);
+    if (trip) {
+      const tripUrl = BASE_URL + (lang === 'en' ? `/trips/${trip.slug}/index.html` : `/es/trips/${trip.slug}/index.html`);
+      const backText = lang === 'en' ? `&larr; Back to ${trip.title}` : `&larr; Volver a ${trip.title}`;
+      html = html.replace(/{{BACK_TO_TRIP}}/g, `<div class="back-to-trip"><a href="${tripUrl}">${backText}</a></div>`);
+    } else {
+      html = html.replace(/{{BACK_TO_TRIP}}/g, '');
+    }
+
     if (post.cover_image) {
       const imgSrc = post.cover_image.startsWith('http') ? post.cover_image : `${BASE_URL}/${post.cover_image.replace(/^\//, '')}`;
       html = html.replace(/{{COVER_IMAGE}}/g, `<img src="${imgSrc}" alt="${post.title}" class="post-cover">`);

@@ -209,6 +209,22 @@ nav {
   box-shadow: var(--shadow);
 }
 
+.back-to-trip {
+  margin-bottom: 20px;
+}
+
+.back-to-trip a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.back-to-trip a:hover {
+  color: var(--primary-color);
+}
+
 .post-content {
   font-size: 1.1rem;
 }
