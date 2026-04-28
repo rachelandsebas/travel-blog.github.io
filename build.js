@@ -34,10 +34,21 @@ const postTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'post.html'), 'utf
 
 // Configure marked to handle local image paths with BASE_URL
 const renderer = new marked.Renderer();
-renderer.image = function(href, title, text) {
-  // If it's an external URL, leave it alone. Otherwise, prepend BASE_URL/assets/
-  const isAbsolute = href && (href.startsWith('http://') || href.startsWith('https://'));
-  const src = isAbsolute ? href : BASE_URL + '/' + href.replace(/^\//, '');
+renderer.image = function(token) {
+  let href, title, text;
+  if (typeof token === 'object' && token !== null && 'href' in token) {
+    href = token.href;
+    title = token.title;
+    text = token.text;
+  } else {
+    href = arguments[0];
+    title = arguments[1];
+    text = arguments[2];
+  }
+
+  // If it's an external URL, leave it alone. Otherwise, prepend BASE_URL/
+  const isAbsolute = href && (typeof href === 'string') && (href.startsWith('http://') || href.startsWith('https://'));
+  const src = isAbsolute ? href : BASE_URL + '/' + (href ? href.replace(/^\//, '') : '');
   
   let imgHtml = `<img src="${src}" alt="${text || ''}"`;
   if (title) imgHtml += ` title="${title}"`;
