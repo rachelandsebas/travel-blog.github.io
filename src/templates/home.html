@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <meta name="description" content="A minimalist travel blog covering adventures around the world.">
+  <link rel="stylesheet" href="{{ASSET_PATH}}assets/index.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="{{SITE_ROOT}}" class="logo">Wanderlust</a>
+      <div class="lang-switch">
+        <a href="/" class="{{EN_ACTIVE}}">EN</a>
+        <a href="/es/" class="{{ES_ACTIVE}}">ES</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>{{HERO_TITLE}}</h1>
+        <p>{{HERO_SUBTITLE}}</p>
+      </section>
+
+      <section class="posts-grid">
+        {{POSTS}}
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Travel Blog. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

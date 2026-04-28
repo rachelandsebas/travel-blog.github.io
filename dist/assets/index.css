@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Default Minimalist Theme */
+  --bg-color: #fcfcfc;
+  --text-color: #2b2b2b;
+  --primary-color: #555555;
+  --accent-color: #888888;
+  --card-bg: #ffffff;
+  --border-color: #eaeaea;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Theme: Korea (Soft Pastel & Vibrant Accent) */
+.theme-korea {
+  --bg-color: #fdfdfd;
+  --primary-color: #0047a0; /* Taegeuk Blue */
+  --accent-color: #cd2e3a; /* Taegeuk Red */
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+}
+
+/* Theme: China (Imperial Red & Gold) */
+.theme-china {
+  --bg-color: #faf9f6; /* Off-white paper */
+  --primary-color: #de2910; /* China Red */
+  --accent-color: #ffde00; /* Gold */
+  --card-bg: #ffffff;
+  --border-color: #f0e6d2;
+}
+
+/* Theme: Japan (Minimalist & Cherry Blossom) */
+.theme-japan {
+  --bg-color: #fffbfc;
+  --primary-color: #bc002d; /* Japan Red */
+  --accent-color: #ffb7c5; /* Sakura Pink */
+  --card-bg: #ffffff;
+  --border-color: #f7e6ea;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-weight: 300;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 15px;
+}
+
+.lang-switch a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.lang-switch a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.lang-switch a:hover {
+  color: var(--primary-color);
+}
+
+/* Home Page */
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.posts-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.post-card-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.post-card-content {
+  padding: 25px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.post-excerpt {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.country-tag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Post Page */
+.post-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.post-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.post-header .post-meta {
+  justify-content: center;
+  gap: 20px;
+}
+
+.post-cover {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+}
+
+.post-content {
+  font-size: 1.1rem;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+.post-content h2, .post-content h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 80px;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .post-header h1 { font-size: 2.2rem; }
+}
