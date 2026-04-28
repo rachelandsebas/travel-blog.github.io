@@ -29,12 +29,42 @@ document.addEventListener('DOMContentLoaded', () => {
       timelineContainer.scrollLeft = timelineContainer.scrollWidth;
     }, 100);
 
+    let scrollInterval;
+
+    function startScrolling(direction) {
+      // Clear any existing interval
+      stopScrolling();
+      scrollInterval = setInterval(() => {
+        timelineContainer.scrollBy({ left: direction * 5, behavior: 'auto' });
+      }, 16); // roughly 60fps
+    }
+
+    function stopScrolling() {
+      if (scrollInterval) {
+        clearInterval(scrollInterval);
+        scrollInterval = null;
+      }
+    }
+
     if (prevBtn) {
+      prevBtn.addEventListener('mouseenter', () => startScrolling(-1));
+      prevBtn.addEventListener('mouseleave', stopScrolling);
+      prevBtn.addEventListener('mouseup', stopScrolling);
+      prevBtn.addEventListener('touchend', stopScrolling);
+      
+      // Fallback click for mobile or quick taps
       prevBtn.addEventListener('click', () => {
         timelineContainer.scrollBy({ left: -300, behavior: 'smooth' });
       });
     }
+    
     if (nextBtn) {
+      nextBtn.addEventListener('mouseenter', () => startScrolling(1));
+      nextBtn.addEventListener('mouseleave', stopScrolling);
+      nextBtn.addEventListener('mouseup', stopScrolling);
+      nextBtn.addEventListener('touchend', stopScrolling);
+      
+      // Fallback click for mobile or quick taps
       nextBtn.addEventListener('click', () => {
         timelineContainer.scrollBy({ left: 300, behavior: 'smooth' });
       });
