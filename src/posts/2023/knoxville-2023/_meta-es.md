@@ -1,9 +1,10 @@
 ---
-title: "Knoxville 2023"
-date: "2023-11-16"
-lang: "es"
-cover_image: ""
-counterpart: "knoxville-2023-en"
+title: Knoxville 2023
+date: '2023-11-16'
+lang: es
+cover_image: ''
+counterpart: knoxville-2023-en
+country: USA
 ---
 
 Viaje a Knoxville.

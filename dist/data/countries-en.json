@@ -25,6 +25,35 @@
       "date": "2026-04-10"
     }
   ],
+  "ecuador": [
+    {
+      "title": "Ecuador - Christmas 2023 (Guayaquil/Cuenca/Baltimore)",
+      "url": "/posts/ecuador-en.html",
+      "date": "2023-12-08"
+    },
+    {
+      "title": "Ecuador - Christmas 2021 (Baltimore/Guayaquil/Ambato/Baños)",
+      "url": "/posts/ecuador-en.html",
+      "date": "2021-12-09"
+    },
+    {
+      "title": "Cono Sur Ecuador 2017",
+      "url": "/posts/main-en.html",
+      "date": "2017-05-08"
+    }
+  ],
+  "usa": [
+    {
+      "title": "USA - Christmas 2023 (Guayaquil/Cuenca/Baltimore)",
+      "url": "/posts/usa-en.html",
+      "date": "2023-12-08"
+    },
+    {
+      "title": "USA - Christmas 2021 (Baltimore/Guayaquil/Ambato/Baños)",
+      "url": "/posts/usa-en.html",
+      "date": "2021-12-09"
+    }
+  ],
   "mexico": [
     {
       "title": "Mexico 2019",
@@ -39,6 +68,20 @@
       "date": "2019-05-25"
     }
   ],
+  "chad": [
+    {
+      "title": "Chad - Greece/Ndjamena 2019",
+      "url": "/posts/chad-en.html",
+      "date": "2019-04-26"
+    }
+  ],
+  "greece": [
+    {
+      "title": "Greece - Greece/Ndjamena 2019",
+      "url": "/posts/greece-en.html",
+      "date": "2019-04-26"
+    }
+  ],
   "brazil": [
     {
       "title": "Cono Sur Brazil 2018",
@@ -49,13 +92,6 @@
       "title": "IMO Brazil 2017",
       "url": "/posts/main-en.html",
       "date": "2017-07-12"
-    }
-  ],
-  "ecuador": [
-    {
-      "title": "Cono Sur Ecuador 2017",
-      "url": "/posts/main-en.html",
-      "date": "2017-05-08"
     }
   ],
   "chile": [

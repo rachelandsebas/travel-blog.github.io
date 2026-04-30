@@ -1,9 +1,10 @@
 ---
-title: "Baltimore 2022"
-date: "2022-12-25"
-lang: "en"
-cover_image: ""
-counterpart: "baltimore-2022-es"
+title: Baltimore 2022
+date: '2022-12-25'
+lang: en
+cover_image: ''
+counterpart: baltimore-2022-es
+country: USA
 ---
 
 Trip to Baltimore.
