@@ -96,8 +96,21 @@ for (const yearStr of yearFolders) {
         const assetPath = lang === 'en' ? './' : '../'; // For home page context
         const renderer = getMarkedRenderer(tripSlug, assetPath);
         
+        // Auto-assign cover image if missing
+        let coverImage = parsed.data.cover_image;
+        if (!coverImage || coverImage === "") {
+          const imgDir = path.join(tripDir, 'images');
+          if (fs.existsSync(imgDir)) {
+            const images = fs.readdirSync(imgDir).filter(f => /\.(jpe?g|png|webp|gif|avif)$/i.test(f));
+            if (images.length > 0) {
+              coverImage = `images/${images[0]}`;
+            }
+          }
+        }
+
         tripsByLang[lang].push({
           ...parsed.data,
+          cover_image: coverImage,
           slug: tripSlug,
           year: yearStr,
           htmlContent: marked.parse(parsed.content, { renderer })
@@ -120,12 +133,20 @@ for (const yearStr of yearFolders) {
 
       // Auto-assign cover image if missing and trip has images
       let coverImage = parsed.data.cover_image;
-      if (!coverImage || coverImage === "") {
-        const imgDir = path.join(tripDir, 'images');
-        if (fs.existsSync(imgDir)) {
-          const images = fs.readdirSync(imgDir).filter(f => /\.(jpe?g|png|webp|gif|avif)$/i.test(f));
-          if (images.length > 0) {
-            coverImage = `images/${images[0]}`;
+      let rawContent = parsed.content;
+
+      const imgDir = path.join(tripDir, 'images');
+      if (fs.existsSync(imgDir)) {
+        const images = fs.readdirSync(imgDir).filter(f => /\.(jpe?g|png|webp|gif|avif)$/i.test(f));
+        if (images.length > 0) {
+          const firstImage = `images/${images[0]}`;
+          if (!coverImage || coverImage === "") {
+            coverImage = firstImage;
+          }
+          // Dynamically inject image into placeholder posts if missing
+          const isPlaceholder = rawContent.trim() === "Post coming soon!" || rawContent.trim() === "¡Publicación próximamente!" || rawContent.trim().startsWith("Post about") || rawContent.trim().startsWith("¡Publicación sobre");
+          if (isPlaceholder && !rawContent.includes('![')) {
+            rawContent += `\n\n![${parsed.data.title || 'Trip image'}](${firstImage})\n`;
           }
         }
       }
@@ -133,7 +154,7 @@ for (const yearStr of yearFolders) {
       const postData = {
         ...parsed.data,
         cover_image: coverImage,
-        rawContent: parsed.content,
+        rawContent: rawContent,
         slug: uniqueSlug,
         fileSlug: fileSlug, // Keep original filename slug for counterpart matching
         tripSlug: tripSlug,
