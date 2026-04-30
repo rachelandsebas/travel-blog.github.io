@@ -1,11 +1,12 @@
 // src/assets/map.js
-// Minimalist world map that highlights visited countries using GeoJSON outlines.
+// Interactive world map with robust country matching and console logging for debugging.
 
 document.addEventListener('DOMContentLoaded', () => {
   const mapContainer = document.getElementById('world-map');
   if (!mapContainer) return;
 
-  // Initialize Leaflet map - no tiles, just the SVG layer
+  console.log('Map initialization started...');
+
   const map = L.map('world-map', {
     center: [20, 0],
     zoom: 2,
@@ -14,48 +15,58 @@ document.addEventListener('DOMContentLoaded', () => {
     attributionControl: false,
     zoomControl: true,
     dragging: true,
-    scrollWheelZoom: false // Disable scroll zoom to prevent accidental scrolling
+    scrollWheelZoom: false
   });
 
   // Load country‑to‑posts mapping
   fetch(`${window.BASE_URL || ''}/data/countries.json`)
     .then(r => r.json())
     .then(countryMap => {
+      console.log('Loaded country data:', countryMap);
+
       // Load GeoJSON world borders
-      fetch('https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson')
+      // We'll use a slightly different source that is very common for Leaflet
+      fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
         .then(r => r.json())
         .then(geoData => {
+          console.log('Loaded GeoJSON data');
           
-          // Style function
-          const getStyle = (feature) => {
-            const name = feature.properties.ADMIN.toLowerCase();
-            const key = name.replace(/\s+/g, '-');
-            const isVisited = !!countryMap[key];
+          const getCountryKey = (feature) => {
+            // Try different common property names
+            const name = feature.properties.name || feature.properties.ADMIN || feature.id;
+            if (!name) return null;
+            return name.toLowerCase().replace(/\s+/g, '-');
+          };
 
+          const style = (feature) => {
+            const key = getCountryKey(feature);
+            const isVisited = key && countryMap[key];
+            
             return {
-              fillColor: isVisited ? '#ff7f50' : '#f5f5f5', // coral for visited, light grey for others
-              weight: 1,
+              fillColor: isVisited ? '#ff7f50' : '#ffffff', // White for land, coral for visited
+              weight: 0.5,
               opacity: 1,
-              color: '#999', // border color
+              color: '#999', // border
               fillOpacity: 1
             };
           };
 
-          const onEachCountry = (feature, layer) => {
-            const name = feature.properties.ADMIN;
-            const key = name.toLowerCase().replace(/\s+/g, '-');
+          const onEachFeature = (feature, layer) => {
+            const name = feature.properties.name || feature.properties.ADMIN || feature.id;
+            const key = getCountryKey(feature);
             
-            if (countryMap[key]) {
+            if (key && countryMap[key]) {
+              console.log('Matched visited country:', name);
               layer.on({
                 mouseover: (e) => {
-                  e.target.setStyle({ fillColor: '#ff6347', weight: 2 });
+                  e.target.setStyle({ fillColor: '#ff6347', weight: 1.5 });
                 },
                 mouseout: (e) => {
                   geojson.resetStyle(e.target);
                 },
                 click: (e) => {
                   showCountryModal(name, countryMap[key]);
-                  L.DomEvent.stopPropagation(e); // Prevent map click
+                  L.DomEvent.stopPropagation(e);
                 }
               });
               layer.options.cursor = 'pointer';
@@ -63,9 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
           };
 
           const geojson = L.geoJSON(geoData, {
-            style: getStyle,
-            onEachFeature: onEachCountry
+            style: style,
+            onEachFeature: onEachFeature
           }).addTo(map);
+
+          console.log('Map layers added.');
         })
         .catch(err => console.error('Failed to load GeoJSON:', err));
     })
