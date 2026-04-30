@@ -2,192 +2,192 @@
   "china": [
     {
       "title": "Día 1 en Shanghái",
-      "url": "/es/posts/shanghai-es.html",
+      "url": "/es/posts/asia-2026-shanghai-es.html",
       "date": "2026-04-28"
     },
     {
       "title": "La Gran Muralla y las Noches de Beijing",
-      "url": "/es/posts/beijing-nights-es.html",
+      "url": "/es/posts/asia-2026-beijing-nights-es.html",
       "date": "2026-04-15"
     }
   ],
   "south-korea": [
     {
       "title": "Aventuras en Seúl: Donde la Tradición Encuentra el Mañana",
-      "url": "/es/posts/seoul-adventures-es.html",
+      "url": "/es/posts/asia-2026-seoul-adventures-es.html",
       "date": "2026-04-20"
     }
   ],
   "japan": [
     {
       "title": "Luces de Tokio y Templos Pacíficos",
-      "url": "/es/posts/tokyo-lights-es.html",
+      "url": "/es/posts/asia-2026-tokyo-lights-es.html",
       "date": "2026-04-10"
     }
   ],
   "ecuador": [
     {
       "title": "Ecuador 2025",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/ecuador-2025-main-es.html",
       "date": "2025-12-24"
     },
     {
       "title": "Guayaquil 2024 (Sebastián)",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/guayaquil-2024-main-es.html",
       "date": "2024-12-31"
     },
     {
       "title": "Ecuador - Navidad 2023 (Guayaquil/Cuenca/Baltimore)",
-      "url": "/es/posts/ecuador-es.html",
+      "url": "/es/posts/christmas-2023-ecuador-es.html",
       "date": "2023-12-08"
     },
     {
       "title": "Ecuador/Galápagos 2022",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/ecuador-galapagos-2022-main-es.html",
       "date": "2022-08-27"
     },
     {
       "title": "Ecuador - Navidad 2021 (Baltimore/Guayaquil/Ambato/Baños)",
-      "url": "/es/posts/ecuador-es.html",
+      "url": "/es/posts/christmas-2021-ecuador-es.html",
       "date": "2021-12-09"
     },
     {
       "title": "Cono Sur Ecuador 2017",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/cono-sur-ecuador-2017-main-es.html",
       "date": "2017-05-08"
     }
   ],
   "canada": [
     {
       "title": "Toronto/Banff 2025",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/toronto-banff-2025-main-es.html",
       "date": "2025-06-05"
     },
     {
       "title": "Halifax 2024",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/halifax-2024-main-es.html",
       "date": "2024-12-18"
     },
     {
       "title": "Toronto/Montreal 2023",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/toronto-montreal-2023-main-es.html",
       "date": "2023-06-11"
     },
     {
       "title": "Vancouver 2023",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/vancouver-2023-main-es.html",
       "date": "2023-05-30"
     },
     {
       "title": "Halifax 2022",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/halifax-2022-main-es.html",
       "date": "2022-02-19"
     }
   ],
   "united-states-of-america": [
     {
       "title": "USA - Navidad 2023 (Guayaquil/Cuenca/Baltimore)",
-      "url": "/es/posts/usa-es.html",
+      "url": "/es/posts/christmas-2023-usa-es.html",
       "date": "2023-12-08"
     },
     {
       "title": "Knoxville 2023",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/knoxville-2023-main-es.html",
       "date": "2023-11-16"
     },
     {
       "title": "Baltimore 2022",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/baltimore-2022-main-es.html",
       "date": "2022-12-25"
     },
     {
       "title": "USA - Navidad 2021 (Baltimore/Guayaquil/Ambato/Baños)",
-      "url": "/es/posts/usa-es.html",
+      "url": "/es/posts/christmas-2021-usa-es.html",
       "date": "2021-12-09"
     },
     {
       "title": "Baltimore 2021",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/baltimore-2021-main-es.html",
       "date": "2021-08-07"
     }
   ],
   "mexico": [
     {
       "title": "México 2019",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/mexico-2019-main-es.html",
       "date": "2019-11-10"
     }
   ],
   "bolivia": [
     {
       "title": "Cono Sur Bolivia 2019",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/cono-sur-bolivia-2019-main-es.html",
       "date": "2019-05-25"
     }
   ],
   "chad": [
     {
       "title": "Chad - Grecia/Yamena 2019",
-      "url": "/es/posts/chad-es.html",
+      "url": "/es/posts/greece-ndjamena-2019-chad-es.html",
       "date": "2019-04-26"
     }
   ],
   "greece": [
     {
       "title": "Greece - Grecia/Yamena 2019",
-      "url": "/es/posts/greece-es.html",
+      "url": "/es/posts/greece-ndjamena-2019-greece-es.html",
       "date": "2019-04-26"
     }
   ],
   "brazil": [
     {
       "title": "Cono Sur Brazil 2018",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/cono-sur-brazil-2018-main-es.html",
       "date": "2018-05-22"
     },
     {
       "title": "IMO Brasil 2017",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/imo-brazil-2017-main-es.html",
       "date": "2017-07-12"
     }
   ],
   "chile": [
     {
       "title": "Ibero Chile 2016",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/ibero-chile-2016-main-es.html",
       "date": "2016-09-20"
     },
     {
       "title": "Cono Sur Chile 2015",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/cono-sur-chile-2015-main-es.html",
       "date": "2015-05-15"
     }
   ],
   "hong-kong": [
     {
       "title": "IMO Hong Kong 2016",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/imo-hong-kong-2016-main-es.html",
       "date": "2016-07-06"
     }
   ],
   "thailand": [
     {
       "title": "IMO Tailandia 2015",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/imo-thailand-2015-main-es.html",
       "date": "2015-07-04"
     }
   ],
   "south-africa": [
     {
       "title": "IMO Sudáfrica 2014",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/imo-south-africa-2014-main-es.html",
       "date": "2014-07-03"
     }
   ],
   "uruguay": [
     {
       "title": "Cono Sur Uruguay 2014",
-      "url": "/es/posts/main-es.html",
+      "url": "/es/posts/cono-sur-uruguay-2014-main-es.html",
       "date": "2014-05-10"
     }
   ]

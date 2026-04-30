@@ -114,11 +114,28 @@ for (const yearStr of yearFolders) {
       const content = fs.readFileSync(path.join(tripDir, file), 'utf-8');
       const parsed = matter(content);
       
-      // Post HTML content will be rendered during generation to have correct assetPath
+      // Generate a unique slug by prepending tripSlug to filename
+      const fileSlug = file.replace('.md', '');
+      const uniqueSlug = `${tripSlug}-${fileSlug}`;
+
+      // Auto-assign cover image if missing and trip has images
+      let coverImage = parsed.data.cover_image;
+      if (!coverImage || coverImage === "") {
+        const imgDir = path.join(tripDir, 'images');
+        if (fs.existsSync(imgDir)) {
+          const images = fs.readdirSync(imgDir).filter(f => /\.(jpe?g|png|webp|gif|avif)$/i.test(f));
+          if (images.length > 0) {
+            coverImage = `images/${images[0]}`;
+          }
+        }
+      }
+      
       const postData = {
         ...parsed.data,
+        cover_image: coverImage,
         rawContent: parsed.content,
-        slug: file.replace('.md', ''),
+        slug: uniqueSlug,
+        fileSlug: fileSlug, // Keep original filename slug for counterpart matching
         tripSlug: tripSlug,
         year: yearStr
       };
@@ -224,12 +241,16 @@ function generatePostPages(lang) {
   const langPrefix = lang === 'en' ? '' : `/${lang}`;
   const assetPath = lang === 'en' ? '../' : '../../'; // Relative to post in /posts/
 
-  posts.forEach(post => {
+    posts.forEach(post => {
     const outDir = path.join(DIST_DIR, lang === 'en' ? 'posts' : `${lang}/posts`);
     ensureDir(outDir);
 
     const counterpartLang = lang === 'en' ? 'es' : 'en';
-    const counterpartPost = postsByLang[counterpartLang].find(p => p.slug === post.slug || p.counterpart === post.slug);
+    // Find counterpart post in the same trip
+    const counterpartPost = postsByLang[counterpartLang].find(p => 
+      p.tripSlug === post.tripSlug && 
+      (p.fileSlug === post.counterpart || p.counterpart === post.fileSlug || (p.fileSlug === 'main-es' && post.fileSlug === 'main-en') || (p.fileSlug === 'main-en' && post.fileSlug === 'main-es'))
+    );
     
     const enUrl = lang === 'en' ? '#' : (counterpartPost ? BASE_URL + `/posts/${counterpartPost.slug}.html` : BASE_URL + '/');
     const esUrl = lang === 'es' ? '#' : (counterpartPost ? BASE_URL + `/es/posts/${counterpartPost.slug}.html` : BASE_URL + '/es/');
