@@ -417,6 +417,7 @@ function generateHomePage(lang) {
     .replace(/{{TIMELINE_SECTION}}/g, getTimelineHtml(lang))
     .replace(/{{ASSET_PATH}}/g, assetPath)
     .replace(/{{SITE_ROOT}}/g, siteRoot)
+    .replace(/{{BASE_URL_JS}}/g, BASE_URL)
     .replace(/{{EN_ACTIVE}}/g, lang === 'en' ? 'active' : '')
     .replace(/{{ES_ACTIVE}}/g, lang === 'es' ? 'active' : '')
     .replace(/{{EN_URL}}/g, enUrl)
@@ -436,13 +437,31 @@ generateHomePage('es');
 // Generate a JSON file of countries -> posts for the map
 function generateCountryData() {
   const countryMap = {};
-  // Collect posts for both languages (they share the same countries)
+  
+  // Normalization map for Spanish to English country names (used by GeoJSON)
+  const normalization = {
+    'corea': 'south korea',
+    'japón': 'japan',
+    'españa': 'spain',
+    'estados unidos': 'united states of america',
+    'reino unido': 'united kingdom',
+    'alemania': 'germany',
+    'francia': 'france',
+    'italia': 'italy',
+    'canadá': 'canada',
+    'méxico': 'mexico',
+    'brasil': 'brazil'
+  };
+
   Object.values(postsByLang).forEach(langPosts => {
     langPosts.forEach(p => {
       if (!p.country) return;
       const countries = Array.isArray(p.country) ? p.country : [p.country];
       countries.forEach(c => {
-        const key = c.toLowerCase().replace(/\s+/g, '-');
+        let name = c.toLowerCase();
+        if (normalization[name]) name = normalization[name];
+        const key = name.replace(/\s+/g, '-');
+        
         if (!countryMap[key]) countryMap[key] = [];
         countryMap[key].push({
           title: p.title,
