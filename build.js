@@ -433,4 +433,32 @@ generateTripPages('es');
 generateHomePage('en');
 generateHomePage('es');
 
+// Generate a JSON file of countries -> posts for the map
+function generateCountryData() {
+  const countryMap = {};
+  // Collect posts for both languages (they share the same countries)
+  Object.values(postsByLang).forEach(langPosts => {
+    langPosts.forEach(p => {
+      if (!p.country) return;
+      const countries = Array.isArray(p.country) ? p.country : [p.country];
+      countries.forEach(c => {
+        const key = c.toLowerCase().replace(/\s+/g, '-');
+        if (!countryMap[key]) countryMap[key] = [];
+        countryMap[key].push({
+          title: p.title,
+          url: `${BASE_URL}${p.lang === 'en' ? '/' : '/' + p.lang + '/'}posts/${p.slug}.html`,
+          date: p.date
+        });
+      });
+    });
+  });
+  // Sort each country's posts newest first
+  Object.values(countryMap).forEach(arr => arr.sort((a, b) => new Date(b.date) - new Date(a.date)));
+  const dataDir = path.join(DIST_DIR, 'data');
+  ensureDir(dataDir);
+  fs.writeFileSync(path.join(dataDir, 'countries.json'), JSON.stringify(countryMap, null, 2));
+}
+
+generateCountryData();
+
 console.log('Build completed successfully!');

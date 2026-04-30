@@ -7,6 +7,7 @@
   <title>S&R Travel Blog</title>
   <meta name="description" content="A minimalist travel blog covering adventures around the world.">
   <link rel="stylesheet" href="../assets/index.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-o9N1cZpAeVbd2prb+1M7UsN7etPa+M1ZLZ0tHl6/6Ls=" crossorigin="">
 </head>
 
 <body>
@@ -208,6 +209,22 @@
       </div>
     </section>
   
+
+      <!-- World Map Section -->
+      <section class="world-map">
+        <h2>Travel Map</h2>
+        <div id="world-map" class="map-container"></div>
+      </section>
+
+      <!-- Modal for country posts -->
+      <div id="country-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close" id="modal-close">&times;</span>
+          <h2 id="modal-country"></h2>
+          <ul id="modal-posts"></ul>
+        </div>
+      </div>
+
     </main>
 
     <footer>
@@ -216,6 +233,8 @@
   </div>
 
   <script src="../assets/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1cZpAeVbd2prb+1M7UsN7etPa+M1ZLZ0tHl6/6Ls=" crossorigin=""></script>
+<script src="../assets/map.js"></script>
 </body>
 
 </html>
