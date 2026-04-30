@@ -1,0 +1,101 @@
+{
+  "china": [
+    {
+      "title": "Día 1 en Shanghái",
+      "url": "/es/posts/shanghai-es.html",
+      "date": "2026-04-28"
+    },
+    {
+      "title": "La Gran Muralla y las Noches de Beijing",
+      "url": "/es/posts/beijing-nights-es.html",
+      "date": "2026-04-15"
+    }
+  ],
+  "south-korea": [
+    {
+      "title": "Aventuras en Seúl: Donde la Tradición Encuentra el Mañana",
+      "url": "/es/posts/seoul-adventures-es.html",
+      "date": "2026-04-20"
+    }
+  ],
+  "japan": [
+    {
+      "title": "Luces de Tokio y Templos Pacíficos",
+      "url": "/es/posts/tokyo-lights-es.html",
+      "date": "2026-04-10"
+    }
+  ],
+  "mexico": [
+    {
+      "title": "México 2019",
+      "url": "/es/posts/main-es.html",
+      "date": "2019-11-10"
+    }
+  ],
+  "bolivia": [
+    {
+      "title": "Cono Sur Bolivia 2019",
+      "url": "/es/posts/main-es.html",
+      "date": "2019-05-25"
+    }
+  ],
+  "brazil": [
+    {
+      "title": "Cono Sur Brazil 2018",
+      "url": "/es/posts/main-es.html",
+      "date": "2018-05-22"
+    },
+    {
+      "title": "IMO Brasil 2017",
+      "url": "/es/posts/main-es.html",
+      "date": "2017-07-12"
+    }
+  ],
+  "ecuador": [
+    {
+      "title": "Cono Sur Ecuador 2017",
+      "url": "/es/posts/main-es.html",
+      "date": "2017-05-08"
+    }
+  ],
+  "chile": [
+    {
+      "title": "Ibero Chile 2016",
+      "url": "/es/posts/main-es.html",
+      "date": "2016-09-20"
+    },
+    {
+      "title": "Cono Sur Chile 2015",
+      "url": "/es/posts/main-es.html",
+      "date": "2015-05-15"
+    }
+  ],
+  "hong-kong": [
+    {
+      "title": "IMO Hong Kong 2016",
+      "url": "/es/posts/main-es.html",
+      "date": "2016-07-06"
+    }
+  ],
+  "tailandia": [
+    {
+      "title": "IMO Tailandia 2015",
+      "url": "/es/posts/main-es.html",
+      "date": "2015-07-04"
+    }
+  ],
+  "sudáfrica": [
+    {
+      "title": "IMO Sudáfrica 2014",
+      "url": "/es/posts/main-es.html",
+      "date": "2014-07-03"
+    }
+  ],
+  "uruguay": [
+    {
+      "title": "Cono Sur Uruguay 2014",
+      "url": "/es/posts/main-es.html",
+      "date": "2014-05-10"
+    }
+  ]
+}

@@ -6,18 +6,8 @@
       "date": "2026-04-28"
     },
     {
-      "title": "Día 1 en Shanghái",
-      "url": "/es/posts/shanghai-es.html",
-      "date": "2026-04-28"
-    },
-    {
       "title": "The Great Wall and Beijing Nights",
       "url": "/posts/beijing-nights-en.html",
-      "date": "2026-04-15"
-    },
-    {
-      "title": "La Gran Muralla y las Noches de Beijing",
-      "url": "/es/posts/beijing-nights-es.html",
       "date": "2026-04-15"
     }
   ],
@@ -26,22 +16,12 @@
       "title": "Seoul Adventures: Tradition Meets Tomorrow",
       "url": "/posts/seoul-adventures-en.html",
       "date": "2026-04-20"
-    },
-    {
-      "title": "Aventuras en Seúl: Donde la Tradición Encuentra el Mañana",
-      "url": "/es/posts/seoul-adventures-es.html",
-      "date": "2026-04-20"
     }
   ],
   "japan": [
     {
       "title": "Tokyo Lights and Peaceful Temples",
       "url": "/posts/tokyo-lights-en.html",
-      "date": "2026-04-10"
-    },
-    {
-      "title": "Luces de Tokio y Templos Pacíficos",
-      "url": "/es/posts/tokyo-lights-es.html",
       "date": "2026-04-10"
     }
   ],
@@ -50,22 +30,12 @@
       "title": "Mexico 2019",
       "url": "/posts/main-en.html",
       "date": "2019-11-10"
-    },
-    {
-      "title": "México 2019",
-      "url": "/es/posts/main-es.html",
-      "date": "2019-11-10"
     }
   ],
   "bolivia": [
     {
       "title": "Cono Sur Bolivia 2019",
       "url": "/posts/main-en.html",
-      "date": "2019-05-25"
-    },
-    {
-      "title": "Cono Sur Bolivia 2019",
-      "url": "/es/posts/main-es.html",
       "date": "2019-05-25"
     }
   ],
@@ -76,18 +46,8 @@
       "date": "2018-05-22"
     },
     {
-      "title": "Cono Sur Brazil 2018",
-      "url": "/es/posts/main-es.html",
-      "date": "2018-05-22"
-    },
-    {
       "title": "IMO Brazil 2017",
       "url": "/posts/main-en.html",
-      "date": "2017-07-12"
-    },
-    {
-      "title": "IMO Brasil 2017",
-      "url": "/es/posts/main-es.html",
       "date": "2017-07-12"
     }
   ],
@@ -95,11 +55,6 @@
     {
       "title": "Cono Sur Ecuador 2017",
       "url": "/posts/main-en.html",
-      "date": "2017-05-08"
-    },
-    {
-      "title": "Cono Sur Ecuador 2017",
-      "url": "/es/posts/main-es.html",
       "date": "2017-05-08"
     }
   ],
@@ -110,18 +65,8 @@
       "date": "2016-09-20"
     },
     {
-      "title": "Ibero Chile 2016",
-      "url": "/es/posts/main-es.html",
-      "date": "2016-09-20"
-    },
-    {
       "title": "Cono Sur Chile 2015",
       "url": "/posts/main-en.html",
-      "date": "2015-05-15"
-    },
-    {
-      "title": "Cono Sur Chile 2015",
-      "url": "/es/posts/main-es.html",
       "date": "2015-05-15"
     }
   ],
@@ -129,11 +74,6 @@
     {
       "title": "IMO Hong Kong 2016",
       "url": "/posts/main-en.html",
-      "date": "2016-07-06"
-    },
-    {
-      "title": "IMO Hong Kong 2016",
-      "url": "/es/posts/main-es.html",
       "date": "2016-07-06"
     }
   ],
@@ -156,25 +96,6 @@
       "title": "Cono Sur Uruguay 2014",
       "url": "/posts/main-en.html",
       "date": "2014-05-10"
-    },
-    {
-      "title": "Cono Sur Uruguay 2014",
-      "url": "/es/posts/main-es.html",
-      "date": "2014-05-10"
-    }
-  ],
-  "tailandia": [
-    {
-      "title": "IMO Tailandia 2015",
-      "url": "/es/posts/main-es.html",
-      "date": "2015-07-04"
-    }
-  ],
-  "sudáfrica": [
-    {
-      "title": "IMO Sudáfrica 2014",
-      "url": "/es/posts/main-es.html",
-      "date": "2014-07-03"
     }
   ]
 }

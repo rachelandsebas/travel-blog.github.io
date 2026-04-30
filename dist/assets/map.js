@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollWheelZoom: false
   });
 
-  // Load country‑to‑posts mapping
-  fetch(`${window.BASE_URL || ''}/data/countries.json`)
+  // Load country‑to‑posts mapping (language specific)
+  const lang = document.documentElement.lang || 'en';
+  fetch(`${window.BASE_URL || ''}/data/countries-${lang}.json`)
     .then(r => r.json())
     .then(countryMap => {
       console.log('Loaded country data:', countryMap);

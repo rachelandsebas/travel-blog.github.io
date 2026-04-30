@@ -434,11 +434,8 @@ generateTripPages('es');
 generateHomePage('en');
 generateHomePage('es');
 
-// Generate a JSON file of countries -> posts for the map
+// Generate JSON files of countries -> posts for the map (one per language)
 function generateCountryData() {
-  const countryMap = {};
-  
-  // Normalization map for Spanish to English country names (used by GeoJSON)
   const normalization = {
     'corea': 'south korea',
     'korea': 'south korea',
@@ -454,7 +451,10 @@ function generateCountryData() {
     'brasil': 'brazil'
   };
 
-  Object.values(postsByLang).forEach(langPosts => {
+  ['en', 'es'].forEach(lang => {
+    const countryMap = {};
+    const langPosts = postsByLang[lang] || [];
+    
     langPosts.forEach(p => {
       if (!p.country) return;
       const countries = Array.isArray(p.country) ? p.country : [p.country];
@@ -466,17 +466,19 @@ function generateCountryData() {
         if (!countryMap[key]) countryMap[key] = [];
         countryMap[key].push({
           title: p.title,
-          url: `${BASE_URL}${p.lang === 'en' ? '/' : '/' + p.lang + '/'}posts/${p.slug}.html`,
+          url: `${BASE_URL}${lang === 'en' ? '/' : '/' + lang + '/'}posts/${p.slug}.html`,
           date: p.date
         });
       });
     });
+
+    // Sort each country's posts newest first
+    Object.values(countryMap).forEach(arr => arr.sort((a, b) => new Date(b.date) - new Date(a.date)));
+    
+    const dataDir = path.join(DIST_DIR, 'data');
+    ensureDir(dataDir);
+    fs.writeFileSync(path.join(dataDir, `countries-${lang}.json`), JSON.stringify(countryMap, null, 2));
   });
-  // Sort each country's posts newest first
-  Object.values(countryMap).forEach(arr => arr.sort((a, b) => new Date(b.date) - new Date(a.date)));
-  const dataDir = path.join(DIST_DIR, 'data');
-  ensureDir(dataDir);
-  fs.writeFileSync(path.join(dataDir, 'countries.json'), JSON.stringify(countryMap, null, 2));
 }
 
 generateCountryData();
