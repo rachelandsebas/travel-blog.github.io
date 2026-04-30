@@ -33,29 +33,36 @@ const homeTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'home.html'), 'utf
 const postTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'post.html'), 'utf-8');
 const tripTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, 'trip.html'), 'utf-8');
 
-// Configure marked to handle local image paths with BASE_URL
-const renderer = new marked.Renderer();
-renderer.image = function(token) {
-  let href, title, text;
-  if (typeof token === 'object' && token !== null && 'href' in token) {
-    href = token.href;
-    title = token.title;
-    text = token.text;
-  } else {
-    href = arguments[0];
-    title = arguments[1];
-    text = arguments[2];
-  }
+// Function to get a marked renderer for a specific trip
+function getMarkedRenderer(tripSlug, assetPath) {
+  const renderer = new marked.Renderer();
+  renderer.image = function(token) {
+    let href, title, text;
+    if (typeof token === 'object' && token !== null && 'href' in token) {
+      href = token.href;
+      title = token.title;
+      text = token.text;
+    } else {
+      href = arguments[0];
+      title = arguments[1];
+      text = arguments[2];
+    }
 
-  const isAbsolute = href && (typeof href === 'string') && (href.startsWith('http://') || href.startsWith('https://'));
-  const src = isAbsolute ? href : BASE_URL + '/' + (href ? href.replace(/^\//, '') : '');
-  
-  let imgHtml = `<img src="${src}" alt="${text || ''}"`;
-  if (title) imgHtml += ` title="${title}"`;
-  imgHtml += ` />`;
-  return imgHtml;
-};
-marked.use({ renderer });
+    const isAbsolute = href && (typeof href === 'string') && (href.startsWith('http://') || href.startsWith('https://'));
+    let src = isAbsolute ? href : BASE_URL + '/' + (href ? href.replace(/^\//, '') : '');
+    
+    // Support trip-local images (e.g. ![Alt](images/photo.jpg))
+    if (!isAbsolute && href && href.startsWith('images/')) {
+      src = `${assetPath}assets/images/trips/${tripSlug}/${href.replace('images/', '')}`;
+    }
+    
+    let imgHtml = `<img src="${src}" alt="${text || ''}"`;
+    if (title) imgHtml += ` title="${title}"`;
+    imgHtml += ` />`;
+    return imgHtml;
+  };
+  return renderer;
+}
 
 // State
 const tripsByLang = { en: [], es: [] };
@@ -72,17 +79,28 @@ for (const yearStr of yearFolders) {
     const tripDir = path.join(yearDir, tripSlug);
     const files = fs.readdirSync(tripDir);
 
+    // Copy trip images to dist
+    const tripImagesSrc = path.join(tripDir, 'images');
+    if (fs.existsSync(tripImagesSrc)) {
+      const tripImagesDist = path.join(DIST_DIR, 'assets/images/trips', tripSlug);
+      ensureDir(tripImagesDist);
+      fs.cpSync(tripImagesSrc, tripImagesDist, { recursive: true });
+    }
+
     // Process Meta files
     const processMeta = (lang) => {
       const metaFile = path.join(tripDir, `_meta-${lang}.md`);
       if (fs.existsSync(metaFile)) {
         const content = fs.readFileSync(metaFile, 'utf-8');
         const parsed = matter(content);
+        const assetPath = lang === 'en' ? './' : '../'; // For home page context
+        const renderer = getMarkedRenderer(tripSlug, assetPath);
+        
         tripsByLang[lang].push({
           ...parsed.data,
           slug: tripSlug,
           year: yearStr,
-          htmlContent: marked.parse(parsed.content)
+          htmlContent: marked.parse(parsed.content, { renderer })
         });
       }
     };
@@ -95,11 +113,11 @@ for (const yearStr of yearFolders) {
       
       const content = fs.readFileSync(path.join(tripDir, file), 'utf-8');
       const parsed = matter(content);
-      const htmlContent = marked.parse(parsed.content);
       
+      // Post HTML content will be rendered during generation to have correct assetPath
       const postData = {
         ...parsed.data,
-        htmlContent,
+        rawContent: parsed.content,
         slug: file.replace('.md', ''),
         tripSlug: tripSlug,
         year: yearStr
@@ -164,9 +182,17 @@ function getTimelineHtml(lang) {
   
   trips.forEach(trip => {
     const tripUrl = BASE_URL + (lang === 'en' ? `/trips/${trip.slug}/index.html` : `/es/trips/${trip.slug}/index.html`);
-    const imgSrc = trip.cover_image && trip.cover_image.startsWith('http') 
-      ? trip.cover_image 
-      : (trip.cover_image ? `${BASE_URL}/assets/${trip.cover_image.replace(/^assets\//, '')}` : '');
+    
+    let imgSrc = '';
+    if (trip.cover_image) {
+      if (trip.cover_image.startsWith('http')) {
+        imgSrc = trip.cover_image;
+      } else if (trip.cover_image.startsWith('images/')) {
+        imgSrc = `${BASE_URL}/assets/images/trips/${trip.slug}/${trip.cover_image.replace('images/', '')}`;
+      } else {
+        imgSrc = `${BASE_URL}/assets/${trip.cover_image.replace(/^assets\//, '')}`;
+      }
+    }
       
     items += `
       <a href="${tripUrl}" class="timeline-item">
@@ -210,6 +236,9 @@ function generatePostPages(lang) {
 
     const siteRoot = BASE_URL + (lang === 'en' ? '/' : `/${lang}/`);
 
+    const renderer = getMarkedRenderer(post.tripSlug, assetPath);
+    const htmlContent = marked.parse(post.rawContent, { renderer });
+
     let html = postTemplate
       .replace(/{{LANG}}/g, lang)
       .replace(/{{TITLE}}/g, post.title)
@@ -217,7 +246,7 @@ function generatePostPages(lang) {
       .replace(/{{DATE}}/g, post.date)
       .replace(/{{COUNTRY}}/g, post.country || 'Global')
       .replace(/{{THEME}}/g, post.theme || 'default')
-      .replace(/{{CONTENT}}/g, post.htmlContent)
+      .replace(/{{CONTENT}}/g, htmlContent)
       .replace(/{{ASSET_PATH}}/g, assetPath)
       .replace(/{{SITE_ROOT}}/g, siteRoot)
       .replace(/{{EN_ACTIVE}}/g, lang === 'en' ? 'active' : '')
@@ -237,7 +266,14 @@ function generatePostPages(lang) {
     }
 
     if (post.cover_image) {
-      const imgSrc = post.cover_image.startsWith('http') ? post.cover_image : `${BASE_URL}/${post.cover_image.replace(/^\//, '')}`;
+      let imgSrc = '';
+      if (post.cover_image.startsWith('http')) {
+        imgSrc = post.cover_image;
+      } else if (post.cover_image.startsWith('images/')) {
+        imgSrc = `${assetPath}assets/images/trips/${post.tripSlug}/${post.cover_image.replace('images/', '')}`;
+      } else {
+        imgSrc = `${BASE_URL}/${post.cover_image.replace(/^\//, '')}`;
+      }
       html = html.replace(/{{COVER_IMAGE}}/g, `<img src="${imgSrc}" alt="${post.title}" class="post-cover">`);
     } else {
       html = html.replace(/{{COVER_IMAGE}}/g, '');
@@ -270,9 +306,16 @@ function generateTripPages(lang) {
     
     tripPosts.forEach(post => {
       const postUrl = BASE_URL + `${langPrefix}/posts/${post.slug}.html`;
-      const imgSrc = post.cover_image && post.cover_image.startsWith('http') 
-        ? post.cover_image 
-        : (post.cover_image ? `${BASE_URL}/${post.cover_image.replace(/^\//, '')}` : '');
+      let imgSrc = '';
+      if (post.cover_image) {
+        if (post.cover_image.startsWith('http')) {
+          imgSrc = post.cover_image;
+        } else if (post.cover_image.startsWith('images/')) {
+          imgSrc = `${assetPath}assets/images/trips/${post.tripSlug}/${post.cover_image.replace('images/', '')}`;
+        } else {
+          imgSrc = `${BASE_URL}/${post.cover_image.replace(/^\//, '')}`;
+        }
+      }
 
       const coverImage = imgSrc ? `<img src="${imgSrc}" alt="${post.title}" class="post-card-img">` : '';
 
@@ -342,9 +385,11 @@ function generateHomePage(lang) {
   let postsHtml = '';
   recentPosts.forEach(post => {
     const postUrl = BASE_URL + `${langPrefix}/posts/${post.slug}.html`;
-    const imgSrc = post.cover_image && post.cover_image.startsWith('http') 
-      ? post.cover_image 
-      : (post.cover_image ? `${BASE_URL}/${post.cover_image.replace(/^\//, '')}` : '');
+        const imgSrc = post.cover_image && post.cover_image.startsWith('http')
+          ? post.cover_image
+          : (post.cover_image && post.cover_image.startsWith('images/')
+            ? `${BASE_URL}/assets/images/trips/${post.tripSlug}/${post.cover_image.replace('images/', '')}`
+            : (post.cover_image ? `${BASE_URL}/${post.cover_image.replace(/^\//, '')}` : ''));
 
     const coverImage = imgSrc ? `<img src="${imgSrc}" alt="${post.title}" class="post-card-img">` : '';
 
