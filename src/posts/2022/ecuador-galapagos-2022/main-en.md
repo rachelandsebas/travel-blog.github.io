@@ -5,8 +5,11 @@ lang: en
 country: Ecuador
 theme: default
 excerpt: Highlights and stories from our trip to this destination.
-cover_image: ''
+cover_image: images/IMG_20220828_122438.jpg
 counterpart: main-es
 ---
 
 Post coming soon!
+
+
+![Ecuador/Galapagos 2022](images/IMG_20220828_122438.jpg)

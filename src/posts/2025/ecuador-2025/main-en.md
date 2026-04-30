@@ -5,8 +5,11 @@ lang: en
 country: Ecuador
 theme: default
 excerpt: Highlights and stories from our trip to this destination.
-cover_image: ''
+cover_image: images/IMG-20251226-WA0012.jpg
 counterpart: main-es
 ---
 
 Post coming soon!
+
+
+![Ecuador 2025](images/IMG-20251226-WA0012.jpg)

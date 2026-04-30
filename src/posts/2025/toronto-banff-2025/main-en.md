@@ -5,8 +5,11 @@ lang: en
 country: Canada
 theme: default
 excerpt: Highlights and stories from our trip to this destination.
-cover_image: ''
+cover_image: images/IMG-20250609-WA0151.jpg
 counterpart: main-es
 ---
 
 Post coming soon!
+
+
+![Toronto/Banff 2025](images/IMG-20250609-WA0151.jpg)

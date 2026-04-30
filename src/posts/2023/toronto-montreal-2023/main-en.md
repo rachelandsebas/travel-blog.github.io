@@ -5,8 +5,11 @@ lang: en
 country: Canada
 theme: default
 excerpt: Highlights and stories from our trip to this destination.
-cover_image: ''
+cover_image: images/IMG20230614193720 (1).jpg
 counterpart: main-es
 ---
 
 Post coming soon!
+
+
+![Toronto/Montreal 2023](images/IMG20230614193720 (1).jpg)

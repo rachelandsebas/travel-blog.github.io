@@ -5,8 +5,11 @@ lang: es
 country: Ecuador
 theme: default
 excerpt: Momentos destacados e historias de nuestro viaje a este destino.
-cover_image: ''
+cover_image: images/IMG-20251226-WA0012.jpg
 counterpart: main-en
 ---
 
 ¡Publicación próximamente!
+
+
+![Ecuador 2025](images/IMG-20251226-WA0012.jpg)

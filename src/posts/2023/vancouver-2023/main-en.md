@@ -5,8 +5,11 @@ lang: en
 country: Canada
 theme: default
 excerpt: Highlights and stories from our trip to this destination.
-cover_image: ''
+cover_image: images/IMG20230530094234.jpg
 counterpart: main-es
 ---
 
 Post coming soon!
+
+
+![Vancouver 2023](images/IMG20230530094234.jpg)
