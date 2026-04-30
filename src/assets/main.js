@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Clear any existing interval
       stopScrolling();
       scrollInterval = setInterval(() => {
-        timelineContainer.scrollBy({ left: direction * 5, behavior: 'auto' });
+        timelineContainer.scrollBy({ left: direction * 15, behavior: 'auto' });
       }, 16); // roughly 60fps
     }
 
@@ -51,19 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.addEventListener('mouseleave', stopScrolling);
       prevBtn.addEventListener('mouseup', stopScrolling);
       prevBtn.addEventListener('touchend', stopScrolling);
-      
+
       // Fallback click for mobile or quick taps
       prevBtn.addEventListener('click', () => {
         timelineContainer.scrollBy({ left: -300, behavior: 'smooth' });
       });
     }
-    
+
     if (nextBtn) {
       nextBtn.addEventListener('mouseenter', () => startScrolling(1));
       nextBtn.addEventListener('mouseleave', stopScrolling);
       nextBtn.addEventListener('mouseup', stopScrolling);
       nextBtn.addEventListener('touchend', stopScrolling);
-      
+
       // Fallback click for mobile or quick taps
       nextBtn.addEventListener('click', () => {
         timelineContainer.scrollBy({ left: 300, behavior: 'smooth' });
