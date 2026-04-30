@@ -21,10 +21,15 @@
       "date": "2026-04-15"
     }
   ],
-  "korea": [
+  "south-korea": [
     {
       "title": "Seoul Adventures: Tradition Meets Tomorrow",
       "url": "/posts/seoul-adventures-en.html",
+      "date": "2026-04-20"
+    },
+    {
+      "title": "Aventuras en Seúl: Donde la Tradición Encuentra el Mañana",
+      "url": "/es/posts/seoul-adventures-es.html",
       "date": "2026-04-20"
     }
   ],
@@ -38,13 +43,6 @@
       "title": "Luces de Tokio y Templos Pacíficos",
       "url": "/es/posts/tokyo-lights-es.html",
       "date": "2026-04-10"
-    }
-  ],
-  "south-korea": [
-    {
-      "title": "Aventuras en Seúl: Donde la Tradición Encuentra el Mañana",
-      "url": "/es/posts/seoul-adventures-es.html",
-      "date": "2026-04-20"
     }
   ]
 }

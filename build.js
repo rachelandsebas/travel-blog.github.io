@@ -441,6 +441,7 @@ function generateCountryData() {
   // Normalization map for Spanish to English country names (used by GeoJSON)
   const normalization = {
     'corea': 'south korea',
+    'korea': 'south korea',
     'japón': 'japan',
     'españa': 'spain',
     'estados unidos': 'united states of america',
