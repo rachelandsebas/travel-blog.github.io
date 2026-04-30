@@ -151,6 +151,34 @@
       "date": "2017-07-12"
     }
   ],
+  "france": [
+    {
+      "title": "France - Europe 2017",
+      "url": "/posts/europe-2017-france-en.html",
+      "date": "2017-06-17"
+    }
+  ],
+  "iceland": [
+    {
+      "title": "Iceland - Europe 2017",
+      "url": "/posts/europe-2017-iceland-en.html",
+      "date": "2017-06-17"
+    }
+  ],
+  "switzerland": [
+    {
+      "title": "Switzerland - Europe 2017",
+      "url": "/posts/europe-2017-switzerland-en.html",
+      "date": "2017-06-17"
+    }
+  ],
+  "united-kingdom": [
+    {
+      "title": "United Kingdom - Europe 2017",
+      "url": "/posts/europe-2017-united-kingdom-en.html",
+      "date": "2017-06-17"
+    }
+  ],
   "chile": [
     {
       "title": "Ibero Chile 2016",
