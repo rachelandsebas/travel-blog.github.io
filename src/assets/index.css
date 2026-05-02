@@ -40,6 +40,24 @@
   --border-color: #f7e6ea;
 }
 
+/* Theme: Greece (Aegean Blue & White) */
+.theme-greece {
+  --bg-color: #ffffff;
+  --primary-color: #005bae; /* Aegean Blue */
+  --accent-color: #00a5df; /* Sky Blue */
+  --card-bg: #f8fbff;
+  --border-color: #e1efff;
+}
+
+/* Theme: Chad (Desert Sand & Flag Colors) */
+.theme-chad {
+  --bg-color: #fffdf5; /* Soft Sand */
+  --primary-color: #002664; /* Chad Blue */
+  --accent-color: #c60c30; /* Chad Red */
+  --card-bg: #ffffff;
+  --border-color: #f3e9d2;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
