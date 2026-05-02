@@ -342,8 +342,10 @@ function generateTripPages(lang) {
     const esUrl = lang === 'es' ? '#' : (counterpartTrip ? BASE_URL + `/es/trips/${counterpartTrip.slug}/index.html` : BASE_URL + '/es/');
     const siteRoot = BASE_URL + (lang === 'en' ? '/' : `/${lang}/`);
 
-    // Get posts for this trip
-    const tripPosts = postsByLang[lang].filter(p => p.tripSlug === trip.slug);
+    // Get posts for this trip and sort chronologically (oldest first)
+    const tripPosts = postsByLang[lang]
+      .filter(p => p.tripSlug === trip.slug)
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
     let postsHtml = '';
     
     tripPosts.forEach(post => {

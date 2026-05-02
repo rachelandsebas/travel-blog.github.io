@@ -5,7 +5,7 @@ lang: "en"
 country: "Greece"
 theme: "greece"
 excerpt: "Highlights from Greece during our Greece/Ndjamena 2019 trip."
-cover_image: ""
+cover_image: "images/greece_photo_1.jpg"
 counterpart: "greece-es"
 ---
 
