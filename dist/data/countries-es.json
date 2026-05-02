@@ -127,15 +127,20 @@
   ],
   "chad": [
     {
-      "title": "Chad - Grecia/Yamena 2019",
+      "title": "Chad",
       "url": "/es/posts/greece-ndjamena-2019-chad-es.html",
       "date": "2019-04-26"
     }
   ],
   "greece": [
     {
-      "title": "Greece - Grecia/Yamena 2019",
+      "title": "Grecia",
       "url": "/es/posts/greece-ndjamena-2019-greece-es.html",
+      "date": "2019-04-26"
+    },
+    {
+      "title": "Grecia",
+      "url": "/es/posts/greece-ndjamena-2019-travel-home-es.html",
       "date": "2019-04-26"
     }
   ],

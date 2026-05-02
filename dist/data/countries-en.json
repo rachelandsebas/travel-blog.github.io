@@ -82,6 +82,11 @@
       "title": "Halifax 2022",
       "url": "/posts/halifax-2022-main-en.html",
       "date": "2022-02-19"
+    },
+    {
+      "title": "Travel Home",
+      "url": "/posts/greece-ndjamena-2019-travel-home-en.html",
+      "date": "2019-07-05"
     }
   ],
   "united-states-of-america": [
@@ -118,6 +123,13 @@
       "date": "2019-11-10"
     }
   ],
+  "chad": [
+    {
+      "title": "Chad",
+      "url": "/posts/greece-ndjamena-2019-chad-en.html",
+      "date": "2019-06-19"
+    }
+  ],
   "bolivia": [
     {
       "title": "Cono Sur Bolivia 2019",
@@ -125,16 +137,9 @@
       "date": "2019-05-25"
     }
   ],
-  "chad": [
-    {
-      "title": "Chad - Greece/Ndjamena 2019",
-      "url": "/posts/greece-ndjamena-2019-chad-en.html",
-      "date": "2019-04-26"
-    }
-  ],
   "greece": [
     {
-      "title": "Greece - Greece/Ndjamena 2019",
+      "title": "Greece",
       "url": "/posts/greece-ndjamena-2019-greece-en.html",
       "date": "2019-04-26"
     }
