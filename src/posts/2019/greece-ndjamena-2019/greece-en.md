@@ -49,29 +49,28 @@ Occasionally, we took day trips to the beach.
 ## Downtown Athens
 This is downtown Athens, near the Acropolis.
 
-photo 12
+![photo 12](images/greece_photo_12.jpg)
 
 Mars Hill, where Paul preached!
 
-photo 13
+![photo 13](images/greece_photo_13.jpg)
 
 The Theatre of Dionysus (just beside the Acropolis) - this theatre is still used for concerts today!
 
-photo 14
+![photo 14](images/greece_photo_14.jpg)
 
 Visiting the Acropolis, and subtly listing in on English speaking tour groups.
 
-photo 15
-
-photo 16
+![photo 15](images/greece_photo_15.jpg)
+![photo 16](images/greece_photo_16.jpg)`
 
 ## Porto Astro
 For one week while in Greece, I served at Porto Astro, a Christian camp, where a retreat was held for Farsi-speaking refugees.
 
-photo 17
-photo 18
+![photo 17](images/greece_photo_17.jpg)
+![photo 18](images/greece_photo_18.jpg)
 
 While at the camp, I primarily worked with the pre-school aged children.
 
-photo 19
-photo 20
+![photo 19](images/greece_photo_19.jpg)
+![photo 20](images/greece_photo_20.jpg)
