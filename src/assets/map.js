@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   const center = layer.getBounds().getCenter();
                   const flagIcon = L.divIcon({
                     className: 'flag-marker',
-                    html: `<div class="flag-marker-inner" style="background-image: url(https://flagcdn.com/w80/${iso}.png)"></div>`,
+                    html: `<div class="flag-marker-inner" style="background-image: url(https://flagcdn.com/${iso}.svg)"></div>`,
                     iconSize: [24, 24],
                     iconAnchor: [12, 12]
                   });
