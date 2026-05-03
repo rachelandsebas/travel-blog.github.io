@@ -389,7 +389,7 @@ function generatePostPages(lang) {
       } else {
         imgSrc = `${BASE_URL}/${post.cover_image.replace(/^\//, '')}`;
       }
-      html = html.replace(/{{COVER_IMAGE}}/g, `<div class="image-wrapper cover-wrapper"><img src="${imgSrc}" alt="${post.title}" class="post-cover"><div class="image-caption">${post.title}</div></div>`);
+      html = html.replace(/{{COVER_IMAGE}}/g, `<div class="image-wrapper cover-wrapper"><img src="${imgSrc}" alt="${post.title}" class="post-cover"></div>`);
     } else {
       html = html.replace(/{{COVER_IMAGE}}/g, '');
     }
