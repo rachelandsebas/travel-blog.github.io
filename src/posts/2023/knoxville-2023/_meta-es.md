@@ -5,6 +5,7 @@ lang: es
 cover_image: images/knoxville.jpeg
 counterpart: knoxville-2023-en
 country: USA
+theme: usa
 ---
 
 Viaje a Knoxville.

@@ -1,12 +1,12 @@
 ---
-title: "Grecia"
-date: "2019-04-26"
-lang: "es"
-country: "Greece"
-theme: "greece"
-excerpt: "Lo mejor de Grecia durante nuestro viaje Grecia/Chad 2019."
-cover_image: "images/greece_photo_1.jpg"
-counterpart: "greece"
+title: Grecia
+date: '2019-04-26'
+lang: es
+country: Greece
+theme: greece
+excerpt: Lo mejor de Grecia durante nuestro viaje Grecia/Chad 2019.
+cover_image: images/greece_photo_1.jpg
+counterpart: greece
 ---
 
 Visité Grecia durante unas 7 semanas, desde abril hasta junio de 2019, y me alojé en Atenas. Me encantan las plantas que todos cuidan en sus balcones - es tan hermoso mirar hacia la ciudad y ver color.

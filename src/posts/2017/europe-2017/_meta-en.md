@@ -1,5 +1,5 @@
 ---
-title: Europe 2017 (Iceland, UK, France, Switzerland)
+title: 'Europe 2017 (Iceland, UK, France, Switzerland)'
 date: '2017-06-17'
 lang: en
 country:
@@ -9,6 +9,7 @@ country:
   - Switzerland
 cover_image: ''
 counterpart: europe-2017-es
+theme: iceland
 ---
 
 European trip visiting Iceland, the United Kingdom, France, and Switzerland.

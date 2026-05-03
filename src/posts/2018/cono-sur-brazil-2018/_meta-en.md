@@ -5,6 +5,7 @@ lang: en
 country: Brazil
 cover_image: images/20180824_143738.jpg
 counterpart: cono-sur-brazil-2018-es
+theme: brazil
 ---
 
 Trip to Brazil for Cono Sur Brazil 2018.

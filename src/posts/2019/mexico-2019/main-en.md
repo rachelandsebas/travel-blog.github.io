@@ -3,7 +3,7 @@ title: Mexico 2019
 date: '2019-11-10'
 lang: en
 country: Mexico
-theme: default
+theme: mexico
 excerpt: Highlights and stories from our trip to Mexico.
 cover_image: images/IMG_20191223_083958.jpg
 counterpart: main-es

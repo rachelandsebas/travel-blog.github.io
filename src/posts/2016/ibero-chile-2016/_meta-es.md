@@ -5,6 +5,7 @@ lang: es
 country: Chile
 cover_image: images/IMG_6758.JPG
 counterpart: ibero-chile-2016
+theme: chile
 ---
 
 Viaje a Chile para Ibero Chile 2016.

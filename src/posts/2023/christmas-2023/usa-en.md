@@ -3,7 +3,7 @@ title: USA - Christmas 2023 (Guayaquil/Cuenca/Baltimore)
 date: '2023-12-08'
 lang: en
 country: USA
-theme: default
+theme: usa
 excerpt: >-
   Highlights from USA during our Christmas 2023 (Guayaquil/Cuenca/Baltimore)
   trip.

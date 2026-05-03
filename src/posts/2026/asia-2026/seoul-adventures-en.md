@@ -1,12 +1,15 @@
 ---
-title: "Seoul Adventures: Tradition Meets Tomorrow"
-date: "2026-04-20"
-lang: "en"
-country: "Korea"
-theme: "korea"
-excerpt: "Exploring the vibrant streets of Seoul, where ancient palaces stand next to towering skyscrapers."
-cover_image: "https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&q=80&w=1200"
-counterpart: "seoul-adventures-es"
+title: 'Seoul Adventures: Tradition Meets Tomorrow'
+date: '2026-04-20'
+lang: en
+country: Korea
+theme: korea
+excerpt: >-
+  Exploring the vibrant streets of Seoul, where ancient palaces stand next to
+  towering skyscrapers.
+cover_image: >-
+  https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&q=80&w=1200
+counterpart: seoul-adventures-es
 ---
 
 Welcome to Seoul, the bustling capital of South Korea! 

@@ -1,12 +1,12 @@
 ---
-title: "Día 1 en Shanghái"
-date: "2026-04-28"
-lang: "es"
-country: "China"
-theme: "china"
-excerpt: "Llegada a Shanghái y primeras impresiones de esta megaciudad."
-cover_image: "images/shanghai.jpeg"
-counterpart: "shanghai-en"
+title: Día 1 en Shanghái
+date: '2026-04-28'
+lang: es
+country: China
+theme: china
+excerpt: Llegada a Shanghái y primeras impresiones de esta megaciudad.
+cover_image: images/shanghai.jpeg
+counterpart: shanghai-en
 ---
 
 Shanghai es una ciudad de inmensa escala e historia. 

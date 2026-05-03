@@ -3,7 +3,7 @@ title: USA - Christmas 2021 (Baltimore/Guayaquil/Ambato/Baños)
 date: '2021-12-09'
 lang: en
 country: USA
-theme: default
+theme: usa
 excerpt: >-
   Highlights from USA during our Christmas 2021
   (Baltimore/Guayaquil/Ambato/Baños) trip.

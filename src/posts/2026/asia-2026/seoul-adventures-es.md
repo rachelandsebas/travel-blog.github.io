@@ -1,12 +1,15 @@
 ---
-title: "Aventuras en Seúl: Donde la Tradición Encuentra el Mañana"
-date: "2026-04-20"
-lang: "es"
-country: "Corea"
-theme: "korea"
-excerpt: "Explorando las vibrantes calles de Seúl, donde palacios antiguos se alzan junto a imponentes rascacielos."
-cover_image: "https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&q=80&w=1200"
-counterpart: "seoul-adventures-en"
+title: 'Aventuras en Seúl: Donde la Tradición Encuentra el Mañana'
+date: '2026-04-20'
+lang: es
+country: Corea
+theme: korea
+excerpt: >-
+  Explorando las vibrantes calles de Seúl, donde palacios antiguos se alzan
+  junto a imponentes rascacielos.
+cover_image: >-
+  https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&q=80&w=1200
+counterpart: seoul-adventures-en
 ---
 
 ¡Bienvenidos a Seúl, la bulliciosa capital de Corea del Sur!

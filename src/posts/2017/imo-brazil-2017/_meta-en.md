@@ -5,6 +5,7 @@ lang: en
 country: Brazil
 cover_image: images/IMG_2751.jpg
 counterpart: imo-brazil-2017-es
+theme: brazil
 ---
 
 Trip to Brazil for IMO Brazil 2017.

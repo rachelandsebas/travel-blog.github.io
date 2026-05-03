@@ -1,12 +1,12 @@
 ---
-title: "Greece"
-date: "2019-04-26"
-lang: "en"
-country: "Greece"
-theme: "greece"
-excerpt: "Highlights from Greece during our Greece/Ndjamena 2019 trip."
-cover_image: "images/greece_photo_1.jpg"
-counterpart: "greece-es"
+title: Greece
+date: '2019-04-26'
+lang: en
+country: Greece
+theme: greece
+excerpt: Highlights from Greece during our Greece/Chad 2019 trip.
+cover_image: images/greece_photo_1.jpg
+counterpart: greece-es
 ---
 
 I visited Greece for about 7 weeks from April to June 2019, staying in Athens. I love the plants that everyone keeps on their balconies - it's so beautiful to look out on the city and see colour. 

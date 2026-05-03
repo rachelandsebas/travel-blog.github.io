@@ -3,7 +3,7 @@ title: IMO Sudáfrica 2014
 date: '2014-07-03'
 lang: es
 country: Sudáfrica
-theme: default
+theme: south-africa
 excerpt: Momentos destacados e historias de nuestro viaje a Sudáfrica.
 cover_image: images/DSC04644.JPG
 counterpart: main-en

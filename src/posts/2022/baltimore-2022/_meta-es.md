@@ -5,6 +5,7 @@ lang: es
 cover_image: images/IMG20230102132705.jpg
 counterpart: baltimore-2022-en
 country: USA
+theme: usa
 ---
 
 Viaje a Baltimore.

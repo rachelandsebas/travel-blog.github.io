@@ -5,6 +5,7 @@ lang: es
 cover_image: images/IMG20230530094234.jpg
 counterpart: vancouver-2023-en
 country: Canada
+theme: canada
 ---
 
 Viaje a Vancouver.

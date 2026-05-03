@@ -5,6 +5,7 @@ lang: es
 country: Tailandia
 cover_image: images/DSC06587.JPG
 counterpart: imo-thailand-2015
+theme: thailand
 ---
 
 Viaje a Tailandia para IMO Tailandia 2015.

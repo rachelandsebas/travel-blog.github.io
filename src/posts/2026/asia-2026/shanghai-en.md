@@ -1,12 +1,12 @@
 ---
-title: "Day 1 in Shanghai"
-date: "2026-04-28"
-lang: "en"
-country: "China"
-theme: "china"
-excerpt: "Arrival in Shanghai and first impressions of this megacity."
-cover_image: "images/shanghai.jpeg"
-counterpart: "shanghai-es"
+title: Day 1 in Shanghai
+date: '2026-04-28'
+lang: en
+country: China
+theme: china
+excerpt: Arrival in Shanghai and first impressions of this megacity.
+cover_image: images/shanghai.jpeg
+counterpart: shanghai-es
 ---
 
 Shanghai is a city of immense scale and history. 

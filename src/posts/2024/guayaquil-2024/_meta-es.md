@@ -5,6 +5,7 @@ lang: es
 cover_image: images/IMG20250110195457.jpg
 counterpart: guayaquil-2024-en
 country: Ecuador
+theme: ecuador
 ---
 
 Viaje a Guayaquil.

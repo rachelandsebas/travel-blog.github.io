@@ -7,6 +7,7 @@ counterpart: christmas-2023-es
 country:
   - USA
   - Ecuador
+theme: usa
 ---
 
 Christmas trip 2023.

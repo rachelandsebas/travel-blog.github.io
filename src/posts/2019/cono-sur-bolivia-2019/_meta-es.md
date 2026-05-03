@@ -5,6 +5,7 @@ lang: es
 country: Bolivia
 cover_image: images/IMG_20190827_123110.jpg
 counterpart: cono-sur-bolivia-2019
+theme: bolivia
 ---
 
 Viaje a Bolivia para Cono Sur Bolivia 2019.

@@ -1,12 +1,15 @@
 ---
-title: "Tokyo Lights and Peaceful Temples"
-date: "2026-04-10"
-lang: "en"
-country: "Japan"
-theme: "japan"
-excerpt: "Finding balance between the sensory overload of Akihabara and the quiet zen gardens of Kyoto."
-cover_image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
-counterpart: "tokyo-lights-es"
+title: Tokyo Lights and Peaceful Temples
+date: '2026-04-10'
+lang: en
+country: Japan
+theme: japan
+excerpt: >-
+  Finding balance between the sensory overload of Akihabara and the quiet zen
+  gardens of Kyoto.
+cover_image: >-
+  https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200
+counterpart: tokyo-lights-es
 ---
 
 Japan is a masterclass in contrasts.

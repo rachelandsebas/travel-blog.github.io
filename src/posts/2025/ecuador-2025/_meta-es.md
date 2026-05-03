@@ -5,6 +5,7 @@ lang: es
 cover_image: images/ecuador-2025.jpg
 counterpart: ecuador-2025-en
 country: Ecuador
+theme: ecuador
 ---
 
 ¡Mi increíble viaje por Ecuador!

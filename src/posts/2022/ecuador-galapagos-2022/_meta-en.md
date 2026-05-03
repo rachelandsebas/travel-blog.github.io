@@ -5,6 +5,7 @@ lang: en
 cover_image: images/IMG_20220828_122438.jpg
 counterpart: ecuador-galapagos-2022-es
 country: Ecuador
+theme: ecuador
 ---
 
 Trip to Ecuador and Galapagos.

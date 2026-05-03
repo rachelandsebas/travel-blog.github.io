@@ -5,6 +5,7 @@ lang: en
 country: Chile
 cover_image: images/DSC06140.JPG
 counterpart: cono-sur-chile-2015-es
+theme: chile
 ---
 
 Trip to Chile for Cono Sur Chile 2015.

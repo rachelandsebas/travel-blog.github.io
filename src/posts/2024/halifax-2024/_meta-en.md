@@ -5,6 +5,7 @@ lang: en
 cover_image: images/IMG20241223152939.jpg
 counterpart: halifax-2024-es
 country: Canada
+theme: canada
 ---
 
 Trip to Halifax.

@@ -3,7 +3,7 @@ title: Halifax 2024
 date: '2024-12-18'
 lang: es
 country: Canada
-theme: default
+theme: canada
 excerpt: Momentos destacados e historias de nuestro viaje a este destino.
 cover_image: images/IMG20241223152939.jpg
 counterpart: main-en

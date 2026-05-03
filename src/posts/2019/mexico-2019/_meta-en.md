@@ -5,6 +5,7 @@ lang: en
 country: Mexico
 cover_image: images/IMG_20191223_083958.jpg
 counterpart: mexico-2019-es
+theme: mexico
 ---
 
 Trip to Mexico for Mexico 2019.

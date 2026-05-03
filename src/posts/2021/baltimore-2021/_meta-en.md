@@ -5,6 +5,7 @@ lang: en
 cover_image: ''
 counterpart: baltimore-2021-es
 country: USA
+theme: usa
 ---
 
 Trip to Baltimore.

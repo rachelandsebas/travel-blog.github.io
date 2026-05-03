@@ -3,7 +3,7 @@ title: Halifax 2022
 date: '2022-02-19'
 lang: en
 country: Canada
-theme: default
+theme: canada
 excerpt: Highlights and stories from our trip to this destination.
 cover_image: images/halifax.jpeg
 counterpart: main-es

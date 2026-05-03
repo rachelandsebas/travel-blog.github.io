@@ -7,6 +7,7 @@ counterpart: christmas-2021-es
 country:
   - USA
   - Ecuador
+theme: usa
 ---
 
 Christmas trip 2021.

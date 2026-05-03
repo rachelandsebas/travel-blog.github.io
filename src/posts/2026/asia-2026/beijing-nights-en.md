@@ -1,12 +1,15 @@
 ---
-title: "The Great Wall and Beijing Nights"
-date: "2026-04-15"
-lang: "en"
-country: "China"
-theme: "china"
-excerpt: "Walking the ancient steps of the Great Wall and experiencing the neon glow of modern Beijing."
-cover_image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1200"
-counterpart: "beijing-nights-es"
+title: The Great Wall and Beijing Nights
+date: '2026-04-15'
+lang: en
+country: China
+theme: china
+excerpt: >-
+  Walking the ancient steps of the Great Wall and experiencing the neon glow of
+  modern Beijing.
+cover_image: >-
+  https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1200
+counterpart: beijing-nights-es
 ---
 
 Beijing is a city of immense scale and history. 

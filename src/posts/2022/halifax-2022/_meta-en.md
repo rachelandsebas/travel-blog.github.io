@@ -5,6 +5,7 @@ lang: en
 cover_image: images/halifax.jpeg
 counterpart: halifax-2022-es
 country: Canada
+theme: canada
 ---
 
 Trip to Halifax.

@@ -1,12 +1,15 @@
 ---
-title: "La Gran Muralla y las Noches de Beijing"
-date: "2026-04-15"
-lang: "es"
-country: "China"
-theme: "china"
-excerpt: "Caminando por los antiguos escalones de la Gran Muralla y experimentando el resplandor de neón de la Beijing moderna."
-cover_image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1200"
-counterpart: "beijing-nights-en"
+title: La Gran Muralla y las Noches de Beijing
+date: '2026-04-15'
+lang: es
+country: China
+theme: china
+excerpt: >-
+  Caminando por los antiguos escalones de la Gran Muralla y experimentando el
+  resplandor de neón de la Beijing moderna.
+cover_image: >-
+  https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=1200
+counterpart: beijing-nights-en
 ---
 
 Beijing es una ciudad de inmensa escala e historia.

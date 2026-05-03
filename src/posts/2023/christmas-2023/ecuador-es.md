@@ -3,7 +3,7 @@ title: Ecuador - Navidad 2023 (Guayaquil/Cuenca/Baltimore)
 date: '2023-12-08'
 lang: es
 country: Ecuador
-theme: default
+theme: ecuador
 excerpt: >-
   Lo mejor de Ecuador durante nuestro viaje Navidad 2023
   (Guayaquil/Cuenca/Baltimore).

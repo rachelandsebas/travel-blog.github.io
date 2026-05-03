@@ -1,12 +1,15 @@
 ---
-title: "Luces de Tokio y Templos Pacíficos"
-date: "2026-04-10"
-lang: "es"
-country: "Japón"
-theme: "japan"
-excerpt: "Encontrando el equilibrio entre la sobrecarga sensorial de Akihabara y los tranquilos jardines zen de Kioto."
-cover_image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200"
-counterpart: "tokyo-lights-en"
+title: Luces de Tokio y Templos Pacíficos
+date: '2026-04-10'
+lang: es
+country: Japón
+theme: japan
+excerpt: >-
+  Encontrando el equilibrio entre la sobrecarga sensorial de Akihabara y los
+  tranquilos jardines zen de Kioto.
+cover_image: >-
+  https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200
+counterpart: tokyo-lights-en
 ---
 
 Japón es una clase magistral de contrastes.

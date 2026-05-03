@@ -5,6 +5,7 @@ lang: es
 country: Uruguay
 cover_image: images/IMG_56487346408573.jpg
 counterpart: cono-sur-uruguay-2014
+theme: uruguay
 ---
 
 Viaje a Uruguay para Cono Sur Uruguay 2014.

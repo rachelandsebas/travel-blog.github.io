@@ -3,7 +3,7 @@ title: IMO Thailand 2015
 date: '2015-07-04'
 lang: en
 country: Thailand
-theme: default
+theme: thailand
 excerpt: Highlights and stories from our trip to Thailand.
 cover_image: images/DSC06587.JPG
 counterpart: main-es
