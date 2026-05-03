@@ -1,6 +1,6 @@
 ---
 title: Chad
-date: '2019-04-26'
+date: '2019-06-19'
 lang: es
 country: Chad
 theme: chad
