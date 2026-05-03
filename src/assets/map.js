@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
               layer.on({
                 mouseover: (e) => {
                   e.target.setStyle({
-                    fillColor: '#ff6347',
+                    fillColor: '#78a380',
                     weight: 1.5
                   });
                 },
