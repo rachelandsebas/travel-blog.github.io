@@ -61,7 +61,7 @@ function getFlagHtml(countryName, isLarge = false) {
     const code = ISO_CODES[c.toLowerCase()];
     if (code) {
       const size = isLarge ? 'w80' : 'w40';
-      return `<img src="https://flagcdn.com/${size}/${code}.png" class="title-flag" alt="${c} flag">`;
+      return `<div class="title-flag" style="background-image: url('https://flagcdn.com/${size}/${code}.png')" aria-label="${c} flag"></div>`;
     }
     return '';
   }).filter(h => h !== '').join(' ');

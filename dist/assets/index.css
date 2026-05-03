@@ -985,10 +985,15 @@ footer {
 
 /* Title & Trip Flags */
 .title-flag {
-  height: 0.8em;
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
   vertical-align: middle;
   margin-right: 0.3em;
-  border-radius: 2px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
@@ -1000,8 +1005,10 @@ footer {
 }
 
 .trip-flags .title-flag {
-  height: 2.5em;
+  width: 3.5em;
+  height: 3.5em;
   margin-right: 0;
+  border: 2px solid white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
