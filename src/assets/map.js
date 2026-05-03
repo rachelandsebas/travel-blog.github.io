@@ -78,7 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
             'suiza': 'switzerland'
           };
 
-          const ISO_CODES = {
+          const COUNTRY_CENTERS = {
+      'united-states-of-america': [37.0902, -95.7129], // Contiguous US center
+      'france': [46.2276, 2.2137], // Mainland France
+      'canada': [56.1304, -106.3468],
+      'china': [35.8617, 104.1954],
+      'russia': [61.5240, 105.3188],
+      'united-kingdom': [54.3781, -3.4360]
+    };
+
+    const ISO_CODES = {
             'south-korea': 'kr',
             'china': 'cn',
             'japan': 'jp',
@@ -151,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
               if (iso) {
                 // Wait for layer to be added to calculate bounds accurately
                 setTimeout(() => {
-                  const center = layer.getBounds().getCenter();
+                  const center = COUNTRY_CENTERS[key] || layer.getBounds().getCenter();
                   const flagIcon = L.divIcon({
                     className: 'flag-marker',
                     html: `<div class="flag-marker-inner" style="background-image: url(https://flagcdn.com/${iso}.svg)"></div>`,
