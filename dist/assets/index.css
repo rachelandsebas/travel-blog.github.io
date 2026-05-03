@@ -346,6 +346,11 @@ nav {
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
 }
 
 .post-header .post-meta {
@@ -1000,6 +1005,7 @@ footer {
 .trip-flags {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
   margin-bottom: 15px;
 }
