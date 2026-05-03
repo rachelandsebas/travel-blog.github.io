@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(r => r.json())
         .then(geoData => {
           console.log('Loaded GeoJSON data');
-          
+
           const normalization = {
             'corea': 'south-korea',
             'korea': 'south-korea',
@@ -79,15 +79,15 @@ document.addEventListener('DOMContentLoaded', () => {
           };
 
           const COUNTRY_CENTERS = {
-      'united-states-of-america': [37.0902, -95.7129], // Contiguous US center
-      'france': [46.2276, 2.2137], // Mainland France
-      'canada': [56.1304, -106.3468],
-      'china': [35.8617, 104.1954],
-      'russia': [61.5240, 105.3188],
-      'united-kingdom': [54.3781, -3.4360]
-    };
+            'united-states-of-america': [37.0902, -95.7129], // Contiguous US center
+            'france': [46.2276, 2.2137], // Mainland France
+            'canada': [56.1304, -106.3468],
+            'china': [35.8617, 104.1954],
+            'russia': [61.5240, 105.3188],
+            'united-kingdom': [54.3781, -3.4360]
+          };
 
-    const ISO_CODES = {
+          const ISO_CODES = {
             'south-korea': 'kr',
             'china': 'cn',
             'japan': 'jp',
@@ -123,9 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const style = (feature) => {
             const key = getCountryKey(feature);
             const isVisited = key && countryMap[key];
-            
+
             return {
-              fillColor: isVisited ? '#ff7f50' : '#ffffff',
+              fillColor: isVisited ? '#8FB996' : '#ffffff',
               weight: 0.5,
               opacity: 1,
               color: '#999',
@@ -136,11 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const onEachFeature = (feature, layer) => {
             const name = feature.properties.name || feature.properties.ADMIN || feature.id;
             const key = getCountryKey(feature);
-            
+
             if (key && countryMap[key]) {
               layer.on({
                 mouseover: (e) => {
-                  e.target.setStyle({ 
+                  e.target.setStyle({
                     fillColor: '#ff6347',
                     weight: 1.5
                   });

@@ -485,9 +485,9 @@ nav {
 }
 
 .carousel .image-wrapper {
-  flex: 0 0 calc(33.333% - 10px);
+  flex: 0 0 32%;
   max-width: none;
-  width: calc(33.333% - 10px);
+  width: 32%;
   height: 350px;
   border-radius: 8px;
   scroll-snap-align: start;
