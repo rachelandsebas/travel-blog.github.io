@@ -9,24 +9,29 @@
   --card-bg: #ffffff;
   --border-color: #eaeaea;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  
+
   font-family: 'Outfit', sans-serif;
 }
 
 /* Theme: Korea (Soft Pastel & Vibrant Accent) */
 .theme-korea {
   --bg-color: #fdfdfd;
-  --primary-color: #0047a0; /* Taegeuk Blue */
-  --accent-color: #cd2e3a; /* Taegeuk Red */
+  --primary-color: #0047a0;
+  /* Taegeuk Blue */
+  --accent-color: #cd2e3a;
+  /* Taegeuk Red */
   --card-bg: #ffffff;
   --border-color: #e2e8f0;
 }
 
 /* Theme: China (Imperial Red & Gold) */
 .theme-china {
-  --bg-color: #faf9f6; /* Off-white paper */
-  --primary-color: #de2910; /* China Red */
-  --accent-color: #ffde00; /* Gold */
+  --bg-color: #faf9f6;
+  /* Off-white paper */
+  --primary-color: #de2910;
+  /* China Red */
+  --accent-color: #ffde00;
+  /* Gold */
   --card-bg: #ffffff;
   --border-color: #f0e6d2;
 }
@@ -34,8 +39,10 @@
 /* Theme: Japan (Minimalist & Cherry Blossom) */
 .theme-japan {
   --bg-color: #fffbfc;
-  --primary-color: #bc002d; /* Japan Red */
-  --accent-color: #ffb7c5; /* Sakura Pink */
+  --primary-color: #bc002d;
+  /* Japan Red */
+  --accent-color: #ffb7c5;
+  /* Sakura Pink */
   --card-bg: #ffffff;
   --border-color: #f7e6ea;
 }
@@ -43,17 +50,22 @@
 /* Theme: Greece (Aegean Blue & White) */
 .theme-greece {
   --bg-color: #ffffff;
-  --primary-color: #005bae; /* Aegean Blue */
-  --accent-color: #00a5df; /* Sky Blue */
+  --primary-color: #005bae;
+  /* Aegean Blue */
+  --accent-color: #00a5df;
+  /* Sky Blue */
   --card-bg: #f8fbff;
   --border-color: #e1efff;
 }
 
 /* Theme: Chad (Desert Sand & Flag Colors) */
 .theme-chad {
-  --bg-color: #fffdf5; /* Soft Sand */
-  --primary-color: #002664; /* Chad Blue */
-  --accent-color: #c60c30; /* Chad Red */
+  --bg-color: #fffdf5;
+  /* Soft Sand */
+  --primary-color: #002664;
+  /* Chad Blue */
+  --accent-color: #c60c30;
+  /* Chad Red */
   --card-bg: #ffffff;
   --border-color: #f3e9d2;
 }
@@ -61,7 +73,8 @@
 /* Theme: Canada (Maple Red & Snow White) */
 .theme-canada {
   --bg-color: #ffffff;
-  --primary-color: #d80621; /* Canada Red */
+  --primary-color: #d80621;
+  /* Canada Red */
   --accent-color: #333333;
   --card-bg: #fffafa;
   --border-color: #fce8e8;
@@ -70,8 +83,10 @@
 /* Theme: USA (Liberty Blue & Red) */
 .theme-usa {
   --bg-color: #f8f9fa;
-  --primary-color: #002868; /* Old Glory Blue */
-  --accent-color: #bf0a30; /* Old Glory Red */
+  --primary-color: #002868;
+  /* Old Glory Blue */
+  --accent-color: #bf0a30;
+  /* Old Glory Red */
   --card-bg: #ffffff;
   --border-color: #e9ecef;
 }
@@ -79,8 +94,10 @@
 /* Theme: Ecuador (Andean Gold & Blue) */
 .theme-ecuador {
   --bg-color: #fffef0;
-  --primary-color: #003399; /* Flag Blue */
-  --accent-color: #ffcc00; /* Flag Yellow */
+  --primary-color: #003399;
+  /* Flag Blue */
+  --accent-color: #ffcc00;
+  /* Flag Yellow */
   --card-bg: #ffffff;
   --border-color: #fff9c4;
 }
@@ -88,8 +105,10 @@
 /* Theme: France (Tricolore Blue) */
 .theme-france {
   --bg-color: #ffffff;
-  --primary-color: #0055a4; /* French Blue */
-  --accent-color: #ef4135; /* French Red */
+  --primary-color: #0055a4;
+  /* French Blue */
+  --accent-color: #ef4135;
+  /* French Red */
   --card-bg: #fdfdfd;
   --border-color: #e8e8e8;
 }
@@ -97,8 +116,10 @@
 /* Theme: Iceland (Glacial Blue) */
 .theme-iceland {
   --bg-color: #f0f7ff;
-  --primary-color: #003897; /* Iceland Blue */
-  --accent-color: #d72828; /* Iceland Red */
+  --primary-color: #003897;
+  /* Iceland Blue */
+  --accent-color: #d72828;
+  /* Iceland Red */
   --card-bg: #ffffff;
   --border-color: #d1e3f8;
 }
@@ -106,8 +127,10 @@
 /* Theme: UK (Royal Blue) */
 .theme-uk {
   --bg-color: #fdfdfd;
-  --primary-color: #00247d; /* Union Jack Blue */
-  --accent-color: #cf142b; /* Union Jack Red */
+  --primary-color: #00247d;
+  /* Union Jack Blue */
+  --accent-color: #cf142b;
+  /* Union Jack Red */
   --card-bg: #ffffff;
   --border-color: #e2e8f0;
 }
@@ -115,7 +138,8 @@
 /* Theme: Switzerland (Alpine Red) */
 .theme-switzerland {
   --bg-color: #ffffff;
-  --primary-color: #ff0000; /* Swiss Red */
+  --primary-color: #ff0000;
+  /* Swiss Red */
   --accent-color: #666666;
   --card-bg: #fffafa;
   --border-color: #ffcccc;
@@ -124,8 +148,10 @@
 /* Theme: Bolivia (Altiplano Warmth) */
 .theme-bolivia {
   --bg-color: #fffbf0;
-  --primary-color: #d52b1e; /* Flag Red */
-  --accent-color: #007934; /* Flag Green */
+  --primary-color: #d52b1e;
+  /* Flag Red */
+  --accent-color: #007934;
+  /* Flag Green */
   --card-bg: #ffffff;
   --border-color: #f9e300;
 }
@@ -133,8 +159,10 @@
 /* Theme: Brazil (Amazon Green) */
 .theme-brazil {
   --bg-color: #f4fff4;
-  --primary-color: #009c3b; /* Brazil Green */
-  --accent-color: #ffdf00; /* Brazil Yellow */
+  --primary-color: #009c3b;
+  /* Brazil Green */
+  --accent-color: #ffdf00;
+  /* Brazil Yellow */
   --card-bg: #ffffff;
   --border-color: #e0f2e0;
 }
@@ -142,8 +170,10 @@
 /* Theme: Chile (Pacific Blue & Red) */
 .theme-chile {
   --bg-color: #ffffff;
-  --primary-color: #0039a6; /* Chile Blue */
-  --accent-color: #d52b1e; /* Chile Red */
+  --primary-color: #0039a6;
+  /* Chile Blue */
+  --accent-color: #d52b1e;
+  /* Chile Red */
   --card-bg: #f8faff;
   --border-color: #e6e9f0;
 }
@@ -151,7 +181,8 @@
 /* Theme: Hong Kong (Bauhinia Red) */
 .theme-hong-kong {
   --bg-color: #fff9f9;
-  --primary-color: #ee1c25; /* HK Red */
+  --primary-color: #ee1c25;
+  /* HK Red */
   --accent-color: #7d0000;
   --card-bg: #ffffff;
   --border-color: #ffe0e0;
@@ -160,8 +191,10 @@
 /* Theme: Mexico (Mayan Green & Red) */
 .theme-mexico {
   --bg-color: #f6fff8;
-  --primary-color: #006341; /* Mexico Green */
-  --accent-color: #c8102e; /* Mexico Red */
+  --primary-color: #006341;
+  /* Mexico Green */
+  --accent-color: #c8102e;
+  /* Mexico Red */
   --card-bg: #ffffff;
   --border-color: #e2f0e2;
 }
@@ -169,8 +202,10 @@
 /* Theme: South Africa (Savannah Warmth) */
 .theme-south-africa {
   --bg-color: #fffcf5;
-  --primary-color: #007749; /* SA Green */
-  --accent-color: #e03c31; /* SA Red */
+  --primary-color: #007749;
+  /* SA Green */
+  --accent-color: #e03c31;
+  /* SA Red */
   --card-bg: #ffffff;
   --border-color: #ffb81c;
 }
@@ -178,8 +213,10 @@
 /* Theme: Thailand (Siam Blue) */
 .theme-thailand {
   --bg-color: #ffffff;
-  --primary-color: #241d4f; /* Thai Blue */
-  --accent-color: #ed1c24; /* Thai Red */
+  --primary-color: #241d4f;
+  /* Thai Blue */
+  --accent-color: #ed1c24;
+  /* Thai Red */
   --card-bg: #f8f8ff;
   --border-color: #e1e1f0;
 }
@@ -187,8 +224,10 @@
 /* Theme: Uruguay (Sky Blue & Sun) */
 .theme-uruguay {
   --bg-color: #f0faff;
-  --primary-color: #0081c3; /* Uruguay Blue */
-  --accent-color: #fcd116; /* Flag Sun Gold */
+  --primary-color: #0081c3;
+  /* Uruguay Blue */
+  --accent-color: #fcd116;
+  /* Flag Sun Gold */
   --card-bg: #ffffff;
   --border-color: #cce9f5;
 }
@@ -391,7 +430,8 @@ nav {
   margin-bottom: 20px;
 }
 
-.post-content h2, .post-content h3 {
+.post-content h2,
+.post-content h3 {
   margin-top: 40px;
   margin-bottom: 15px;
   color: var(--primary-color);
@@ -485,9 +525,9 @@ nav {
 }
 
 .carousel .image-wrapper {
-  flex: 0 0 32%;
+  flex: 0 0 31%;
   max-width: none;
-  width: 32%;
+  width: 31%;
   height: 350px;
   border-radius: 8px;
   scroll-snap-align: start;
@@ -550,13 +590,20 @@ nav {
   max-height: 85vh;
   object-fit: contain;
   border-radius: 4px;
-  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   animation: lightboxZoom 0.3s ease-out;
 }
 
 @keyframes lightboxZoom {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .lightbox-close {
@@ -595,8 +642,13 @@ nav {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.lightbox-prev { left: 40px; }
-.lightbox-next { right: 40px; }
+.lightbox-prev {
+  left: 40px;
+}
+
+.lightbox-next {
+  right: 40px;
+}
 
 .lightbox-caption {
   position: absolute;
@@ -619,9 +671,19 @@ nav {
     padding: 10px 10px;
     font-size: 20px;
   }
-  .lightbox-prev { left: 10px; }
-  .lightbox-next { right: 10px; }
-  .lightbox-close { top: 15px; right: 20px; }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-close {
+    top: 15px;
+    right: 20px;
+  }
 }
 
 footer {
@@ -693,7 +755,7 @@ footer {
   width: 250px;
   height: 100vh;
   background-color: var(--card-bg);
-  box-shadow: 2px 0 20px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: left 0.3s ease;
   padding: 40px 20px;
@@ -739,11 +801,13 @@ footer {
   color: var(--text-color);
   cursor: pointer;
   margin-bottom: 10px;
-  list-style: none; /* Hide default arrow in some browsers */
+  list-style: none;
+  /* Hide default arrow in some browsers */
 }
 
 .burger-menu-year summary::-webkit-details-marker {
-  display: none; /* Hide default arrow in webkit */
+  display: none;
+  /* Hide default arrow in webkit */
 }
 
 .burger-menu-year summary::after {
@@ -791,7 +855,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -810,7 +874,7 @@ footer {
   text-align: center;
 }
 
-.timeline > h2 {
+.timeline>h2 {
   font-size: 2rem;
   margin-bottom: 40px;
   color: var(--primary-color);
@@ -843,7 +907,8 @@ footer {
   transition: all 0.2s ease;
   flex-shrink: 0;
   position: relative;
-  margin-top: 45px; /* Align center of button (25px) with line (70px from top) */
+  margin-top: 45px;
+  /* Align center of button (25px) with line (70px from top) */
 }
 
 /* Larger hit area for easier hovering */
@@ -891,9 +956,12 @@ footer {
 .timeline-item::before {
   content: '';
   position: absolute;
-  top: 50px; /* Center of the 100px circle */
-  left: calc(-50% - 60px); /* Span from center of previous item, including gap */
-  right: 50%; /* To center of current item */
+  top: 50px;
+  /* Center of the 100px circle */
+  left: calc(-50% - 60px);
+  /* Span from center of previous item, including gap */
+  right: 50%;
+  /* To center of current item */
   height: 2px;
   background: repeating-linear-gradient(to right, var(--primary-color) 0, var(--primary-color) 10px, transparent 10px, transparent 20px);
   z-index: -1;
@@ -919,7 +987,7 @@ footer {
   background-position: center;
   background-color: var(--border-color);
   border: 4px solid var(--card-bg);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
@@ -943,8 +1011,13 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .hero h1 { font-size: 2rem; }
-  .post-header h1 { font-size: 2.2rem; }
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .post-header h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* Map Section */
@@ -952,6 +1025,7 @@ footer {
   padding: 4rem 5%;
   text-align: center;
 }
+
 .map-container {
   width: 100%;
   height: 50vh;
@@ -959,8 +1033,9 @@ footer {
   margin: 2rem auto;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  background: #aad3df; /* Light water blue */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: #aad3df;
+  /* Light water blue */
 }
 
 /* Flag Markers */
@@ -976,7 +1051,7 @@ footer {
   background-size: cover;
   background-position: center;
   border: 2px solid white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
   cursor: pointer;
   z-index: 500;
@@ -984,7 +1059,7 @@ footer {
 
 .flag-marker-inner:hover {
   transform: scale(1.3);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
@@ -999,7 +1074,7 @@ footer {
   background-size: cover;
   background-position: center;
   border: 1px solid white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .trip-flags {
@@ -1016,7 +1091,7 @@ footer {
   margin-right: 0;
   border-radius: 4px;
   border: 2px solid white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Map Modal */
@@ -1026,15 +1101,17 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .modal.hidden {
   display: none;
 }
+
 .modal-content {
   background: var(--card-bg);
   padding: 2rem;
@@ -1046,6 +1123,7 @@ footer {
   position: relative;
   text-align: left;
 }
+
 .modal-content .close {
   position: absolute;
   top: 1rem;
@@ -1054,27 +1132,33 @@ footer {
   cursor: pointer;
   color: var(--text-color);
 }
+
 .modal-content h2 {
   margin-top: 0;
   color: var(--primary-color);
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.5rem;
 }
+
 .modal-content ul {
   list-style: none;
   padding: 0;
 }
+
 .modal-content li {
   margin: 1rem 0;
 }
+
 .modal-content a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 500;
 }
+
 .modal-content a:hover {
   text-decoration: underline;
 }
+
 .modal-content small {
   color: var(--accent-color);
   display: block;
