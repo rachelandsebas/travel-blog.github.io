@@ -11,15 +11,19 @@ counterpart: greece-es
 
 I visited Greece for about 7 weeks from April to June 2019, staying in Athens. I love the plants that everyone keeps on their balconies - it's so beautiful to look out on the city and see colour. 
 
+::: carousel
 ![photo 1](images/greece_photo_1.jpg)
 ![photo 2](images/greece_photo_2.jpg)
+:::
 
 ## My Work
 During my time in Greece, I lived with family friends the Orrs and worked both as an Education Assistant with the kids and supporting resource development for The Stoplight Approach.
 
+::: carousel
 ![photo 3](images/greece_photo_3.jpeg)
 ![photo 4](images/greece_photo_4.jpg)
 ![photo 5](images/greece_photo_5.jpg)
+:::
 
 ## Life in Athens
 This is the weekly Laiki (market) where we usually went to buy fruits and veggies.
@@ -61,16 +65,22 @@ The Theatre of Dionysus (just beside the Acropolis) - this theatre is still used
 
 Visiting the Acropolis, and subtly listing in on English speaking tour groups.
 
+::: carousel
 ![photo 15](images/greece_photo_15.jpg)
-![photo 16](images/greece_photo_16.jpg)`
+![photo 16](images/greece_photo_16.jpg)
+:::
 
 ## Porto Astro
 For one week while in Greece, I served at Porto Astro, a Christian camp, where a retreat was held for Farsi-speaking refugees.
 
+::: carousel
 ![photo 17](images/greece_photo_17.jpg)
 ![photo 18](images/greece_photo_18.jpg)
+:::
 
 While at the camp, I primarily worked with the pre-school aged children.
 
+::: carousel
 ![photo 19](images/greece_photo_19.jpg)
 ![photo 20](images/greece_photo_20.jpg)
+:::

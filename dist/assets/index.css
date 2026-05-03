@@ -394,10 +394,9 @@ nav {
 
 .post-content img {
   display: block;
-  max-width: 90%;
-  max-height: 75vh;
-  width: auto;
-  height: auto;
+  max-width: 100%;
+  height: 350px; /* Increased slightly for single images to feel more prominent */
+  object-fit: cover;
   margin: 40px auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -406,6 +405,71 @@ nav {
 
 .post-content img:hover {
   transform: scale(1.02);
+}
+
+/* Image Carousel */
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  margin: 40px 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--border-color);
+  scroll-behavior: smooth;
+}
+
+/* Center images if they don't overflow, but allow scrolling if they do */
+.carousel::before,
+.carousel::after {
+  content: '';
+  margin: auto;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Handle marked.js potential wrapping */
+.carousel p {
+  display: contents;
+}
+
+.carousel img {
+  flex: 0 0 calc(33.333% - 10px);
+  max-width: none;
+  width: calc(33.333% - 10px);
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  margin: 0 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  .carousel img {
+    flex: 0 0 calc(50% - 10px);
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel img {
+    flex: 0 0 85%;
+    width: 85%;
+  }
 }
 
 footer {

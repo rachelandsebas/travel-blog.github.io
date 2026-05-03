@@ -85,7 +85,7 @@
     },
     {
       "title": "De regreso a casa",
-      "url": "/es/posts/greece-ndjamena-2019-travel-home-es.html",
+      "url": "/es/posts/greece-chad-2019-travel-home-es.html",
       "date": "2019-07-05"
     }
   ],
@@ -123,6 +123,13 @@
       "date": "2019-11-10"
     }
   ],
+  "chad": [
+    {
+      "title": "Chad",
+      "url": "/es/posts/greece-chad-2019-chad-es.html",
+      "date": "2019-06-19"
+    }
+  ],
   "bolivia": [
     {
       "title": "Cono Sur Bolivia 2019",
@@ -130,17 +137,10 @@
       "date": "2019-05-25"
     }
   ],
-  "chad": [
-    {
-      "title": "Chad",
-      "url": "/es/posts/greece-ndjamena-2019-chad-es.html",
-      "date": "2019-04-26"
-    }
-  ],
   "greece": [
     {
       "title": "Grecia",
-      "url": "/es/posts/greece-ndjamena-2019-greece-es.html",
+      "url": "/es/posts/greece-chad-2019-greece-es.html",
       "date": "2019-04-26"
     }
   ],

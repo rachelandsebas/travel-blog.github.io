@@ -279,7 +279,11 @@ function generatePostPages(lang) {
     const siteRoot = BASE_URL + (lang === 'en' ? '/' : `/${lang}/`);
 
     const renderer = getMarkedRenderer(post.tripSlug, assetPath);
-    const htmlContent = marked.parse(post.rawContent, { renderer });
+    
+    // Support custom carousel syntax: ::: carousel ... :::
+    let processedContent = post.rawContent.replace(/::: carousel\s*([\s\S]*?)\n:::/g, '<div class="carousel">\n\n$1\n\n</div>');
+    
+    const htmlContent = marked.parse(processedContent, { renderer });
 
     let html = postTemplate
       .replace(/{{LANG}}/g, lang)
