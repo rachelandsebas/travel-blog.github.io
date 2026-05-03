@@ -5,6 +5,68 @@ const matter = require('gray-matter');
 
 const BASE_URL = process.env.BASE_URL || '';
 
+const ISO_CODES = {
+  'south korea': 'kr',
+  'korea': 'kr',
+  'south-korea': 'kr',
+  'japan': 'jp',
+  'japón': 'jp',
+  'spain': 'es',
+  'españa': 'es',
+  'united states of america': 'us',
+  'usa': 'us',
+  'united states': 'us',
+  'united-states-of-america': 'us',
+  'united kingdom': 'gb',
+  'uk': 'gb',
+  'united-kingdom': 'gb',
+  'reino unido': 'gb',
+  'germany': 'de',
+  'alemania': 'de',
+  'france': 'fr',
+  'francia': 'fr',
+  'italy': 'it',
+  'italia': 'it',
+  'canada': 'ca',
+  'canadá': 'ca',
+  'mexico': 'mx',
+  'méxico': 'mx',
+  'brazil': 'br',
+  'brasil': 'br',
+  'chad': 'td',
+  'greece': 'gr',
+  'grecia': 'gr',
+  'ecuador': 'ec',
+  'bolivia': 'bo',
+  'thailand': 'th',
+  'tailandia': 'th',
+  'uruguay': 'uy',
+  'chile': 'cl',
+  'south africa': 'za',
+  'sudáfrica': 'za',
+  'south-africa': 'za',
+  'hong kong': 'hk',
+  'hong-kong': 'hk',
+  'china': 'cn',
+  'iceland': 'is',
+  'islandia': 'is',
+  'switzerland': 'ch',
+  'suiza': 'ch'
+};
+
+function getFlagHtml(countryName, isLarge = false) {
+  if (!countryName) return '';
+  const countries = Array.isArray(countryName) ? countryName : [countryName];
+  return countries.map(c => {
+    const code = ISO_CODES[c.toLowerCase()];
+    if (code) {
+      const size = isLarge ? 'w80' : 'w40';
+      return `<img src="https://flagcdn.com/${size}/${code}.png" class="title-flag" alt="${c} flag">`;
+    }
+    return '';
+  }).filter(h => h !== '').join(' ');
+}
+
 const SRC_DIR = path.join(__dirname, 'src');
 const DIST_DIR = path.join(__dirname, 'dist');
 const POSTS_DIR = path.join(SRC_DIR, 'posts');
@@ -59,7 +121,13 @@ function getMarkedRenderer(tripSlug, assetPath) {
     let imgHtml = `<img src="${src}" alt="${text || ''}"`;
     if (title) imgHtml += ` title="${title}"`;
     imgHtml += ` />`;
-    return imgHtml;
+    
+    return `
+      <div class="image-wrapper">
+        ${imgHtml}
+        ${text ? `<div class="image-caption">${text}</div>` : ''}
+      </div>
+    `;
   };
   return renderer;
 }
@@ -293,6 +361,7 @@ function generatePostPages(lang) {
       .replace(/{{COUNTRY}}/g, post.country || 'Global')
       .replace(/{{THEME}}/g, post.theme || 'default')
       .replace(/{{CONTENT}}/g, htmlContent)
+      .replace(/{{TITLE_FLAGS}}/g, getFlagHtml(post.country))
       .replace(/{{ASSET_PATH}}/g, assetPath)
       .replace(/{{SITE_ROOT}}/g, siteRoot)
       .replace(/{{EN_ACTIVE}}/g, lang === 'en' ? 'active' : '')
@@ -320,7 +389,7 @@ function generatePostPages(lang) {
       } else {
         imgSrc = `${BASE_URL}/${post.cover_image.replace(/^\//, '')}`;
       }
-      html = html.replace(/{{COVER_IMAGE}}/g, `<img src="${imgSrc}" alt="${post.title}" class="post-cover">`);
+      html = html.replace(/{{COVER_IMAGE}}/g, `<div class="image-wrapper cover-wrapper"><img src="${imgSrc}" alt="${post.title}" class="post-cover"><div class="image-caption">${post.title}</div></div>`);
     } else {
       html = html.replace(/{{COVER_IMAGE}}/g, '');
     }
@@ -386,6 +455,7 @@ function generateTripPages(lang) {
       .replace(/{{LANG}}/g, lang)
       .replace(/{{TRIP_TITLE}}/g, trip.title)
       .replace(/{{TRIP_DATE}}/g, trip.date)
+      .replace(/{{TRIP_FLAGS}}/g, Array.from(new Set(tripPosts.map(p => p.country))).map(c => getFlagHtml(c, true)).join(' '))
       .replace(/{{POSTS}}/g, postsHtml)
       .replace(/{{ASSET_PATH}}/g, assetPath)
       .replace(/{{SITE_ROOT}}/g, siteRoot)
@@ -523,7 +593,11 @@ function generateCountryData() {
     'south africa': 'south africa',
     'sudáfrica': 'south africa',
     'hong kong': 'hong kong',
-    'china': 'china'
+    'china': 'china',
+    'iceland': 'iceland',
+    'islandia': 'iceland',
+    'switzerland': 'switzerland',
+    'suiza': 'switzerland'
   };
 
   ['en', 'es'].forEach(lang => {

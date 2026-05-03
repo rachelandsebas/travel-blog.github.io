@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentGallery = [];
     let currentIndex = 0;
 
-    const allImages = document.querySelectorAll('.post-content img');
+    const allImages = document.querySelectorAll('article img');
 
     allImages.forEach(img => {
       img.addEventListener('click', () => {
