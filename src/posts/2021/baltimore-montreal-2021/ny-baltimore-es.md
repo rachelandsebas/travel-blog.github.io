@@ -6,7 +6,7 @@ country:
   - USA
 theme: usa
 excerpt: Sebastián fue a un evento de Citadel en la ciudad de Nueva York y luego celebramos su cumpleaños en Baltimore.
-cover_image: images/Baltimore_1.jpg
+cover_image: images/Harbour_1.jpg
 counterpart: ny-baltimore-en
 ---
 
