@@ -14,11 +14,14 @@ Sebastián fue a un evento de networking de Citadel en la ciudad de Nueva York, 
 
 Confundido y frustrado, se dirigió a un restaurante ecuatoriano cercano para decidir qué hacer. Pidió una humita, guatita y jugo de maracuyá, algo que todavía recuerda de memoria mientras escribe esto cinco años después. Había pasado demasiado tiempo sin comida ecuatoriana (¡dos años debido al Covid!). El personal del restaurante también le indicó amablemente una zona cercana con hoteles, y pudo conseguir una habitación.
 
-![Evento](images/Event.jpg)
+::: carousel
+![Guata](images/comida1.jpg)
+![Humita y jugo de maracuyá](images/comida2.jpg)
+:::
 
 Sebastián asistió al evento de networking de Citadel ese día y al siguiente. (¡Y terminó un proyecto final para la universidad!).
 
-![Evento](images/Event_2.jpg)
+![Citadel Event View](images/Citadel.jpg)
 
 ## El cumpleaños de Sebastián
 Después del final del evento el segundo día, Rachel voló a Nueva York. Sebastián se encontró con Rachel en el aeropuerto y juntos tomamos el tren a Baltimore para conocer a la familia de Rachel.

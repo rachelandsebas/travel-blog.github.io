@@ -14,11 +14,14 @@ Sebastián went to a Citadel event in New York City at the Rockefeller building.
 
 Confused and frustrated, he headed to a nearby Ecuadorian restaurant to figure out what to do. He ordered an humita, guatita, and jugo de maracuyá - which he still can remember off the top of his head, while writing this five years later. It had been much too long without Ecuadorian food (two years because of Covid!). The restaurant staff also helpfully pointed him to a nearby area with hotels, and he was able to get a room.
 
-![Event](images/Event.jpg)
+::: carousel
+![Guata](images/comida1.jpg)
+![Humita y jugo de maracuyá](images/comida2.jpg)
+:::
 
 Sebastián attended the Citadel networking event that day and the next. (And finished up a final project for school!).
 
-![Event](images/Event_2.jpg)
+![Citadel Event View](images/Citadel.jpg)
 
 ## Sebastián’s Birthday
 After the end of the event on the second day, Rachel flew into New York. Sebastián met Rachel at the airport, and together we took the train to Baltimore to meet Rachel’s family.
@@ -63,7 +66,8 @@ The last day, we walked around downtown Baltimore, stopped at Shake Shack, and t
 ![Downtown Baltimore](images/Harbour_1.jpg)
 ![At the harbour](images/Harbour_2.jpg)
 ![At the harbour](images/Harbour_3.jpg)
-![Shake Shack](images/Harbour_4.jpg)
+![At the harbour](images/Harbour_4.jpg)
+![Shake Shack](images/Harbour_5.jpg)
 :::
 
 ## New York
