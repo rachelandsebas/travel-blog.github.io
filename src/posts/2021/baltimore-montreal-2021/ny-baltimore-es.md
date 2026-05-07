@@ -1,11 +1,11 @@
 ---
-title: Sebastián en Nueva York y Baltimore
+title: Evento en NYC y familia y amigos en Baltimore
 date: '2021-08-06'
 lang: es
 country:
   - USA
 theme: usa
-excerpt: Sebastián fue a un evento de Citadel en la ciudad de Nueva York y luego celebramos su cumpleaños en Baltimore.
+excerpt: El viaje de Sebastián a Nueva York para un evento de Citadel en la ciudad de Nueva York, y luego nuestras dos semanas con la familia de Rachel en Baltimore.
 cover_image: images/Harbour_1.jpg
 counterpart: ny-baltimore-en
 ---
@@ -15,8 +15,8 @@ Sebastián fue a un evento de networking de Citadel en la ciudad de Nueva York, 
 Confundido y frustrado, se dirigió a un restaurante ecuatoriano cercano para decidir qué hacer. Pidió una humita, guatita y jugo de maracuyá, algo que todavía recuerda de memoria mientras escribe esto cinco años después. Había pasado demasiado tiempo sin comida ecuatoriana (¡dos años debido al Covid!). El personal del restaurante también le indicó amablemente una zona cercana con hoteles, y pudo conseguir una habitación.
 
 ::: carousel
-![Guata](images/comida1.jpg)
-![Humita y jugo de maracuyá](images/comida2.jpg)
+![Humita y jugo de maracuyá](images/comida1.jpg)
+![Guatita](images/comida2.jpg)
 :::
 
 Sebastián asistió al evento de networking de Citadel ese día y al siguiente. (¡Y terminó un proyecto final para la universidad!).
