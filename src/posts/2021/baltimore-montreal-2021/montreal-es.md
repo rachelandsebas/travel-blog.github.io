@@ -6,7 +6,7 @@ country:
   - Canada
 theme: canada
 excerpt: Una escala larga en Montreal nos permitió explorar la ciudad, encontrar una panadería nostálgica y realizar un recorrido a pie lleno de historia.
-cover_image: images/Montreal_8.jpg
+cover_image: images/Montreal_4.jpg
 counterpart: montreal-en
 ---
 

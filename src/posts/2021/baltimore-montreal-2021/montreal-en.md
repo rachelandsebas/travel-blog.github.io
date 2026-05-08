@@ -6,7 +6,7 @@ country:
   - Canada
 theme: canada
 excerpt: A long layover in Montreal allowed us to explore the city, find a nostalgic bakery, and take a history-filled walking tour.
-cover_image: images/Montreal_8.jpg
+cover_image: images/Montreal_4.jpg
 counterpart: montreal-es
 ---
 
