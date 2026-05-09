@@ -21,10 +21,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Load country‑to‑posts mapping (language specific)
   const lang = document.documentElement.lang || 'en';
-  fetch(`${window.BASE_URL || ''}/data/countries-${lang}.json`)
-    .then(r => r.json())
-    .then(countryMap => {
-      console.log('Loaded country data:', countryMap);
+  
+  Promise.all([
+    fetch(`${window.BASE_URL || ''}/data/countries-${lang}.json`).then(r => r.json()),
+    fetch('https://restcountries.com/v3.1/all?fields=cca2,population').then(r => r.json())
+  ])
+    .then(([countryMap, popData]) => {
+      console.log('Loaded country data and population data');
+      
+      const ISO_CODES = {
+        'south-korea': 'kr',
+        'china': 'cn',
+        'japan': 'jp',
+        'greece': 'gr',
+        'chad': 'td',
+        'canada': 'ca',
+        'united-states-of-america': 'us',
+        'ecuador': 'ec',
+        'france': 'fr',
+        'iceland': 'is',
+        'united-kingdom': 'gb',
+        'switzerland': 'ch',
+        'bolivia': 'bo',
+        'brazil': 'br',
+        'chile': 'cl',
+        'hong-kong': 'hk',
+        'mexico': 'mx',
+        'south-africa': 'za',
+        'thailand': 'th',
+        'uruguay': 'uy',
+        'spain': 'es',
+        'germany': 'de',
+        'italy': 'it'
+      };
+
+      const updateStats = (countryMap, popData) => {
+        const visitedKeys = Object.keys(countryMap);
+        const visitedCount = visitedKeys.length;
+        const totalCountriesCount = 195; // UN recognized
+        
+        let visitedPop = 0;
+        let totalPop = 0;
+        
+        const visitedIsoCodes = visitedKeys.map(k => ISO_CODES[k]).filter(Boolean);
+        
+        popData.forEach(c => {
+          const pop = c.population || 0;
+          totalPop += pop;
+          if (visitedIsoCodes.includes(c.cca2.toLowerCase())) {
+            visitedPop += pop;
+          }
+        });
+        
+        const countryPct = Math.min(100, Math.round((visitedCount / totalCountriesCount) * 100));
+        const popPct = Math.min(100, Math.round((visitedPop / totalPop) * 100));
+        
+        // Update UI
+        const countriesCircle = document.getElementById('countries-progress');
+        const countriesPct = document.getElementById('countries-pct');
+        const countriesCount = document.getElementById('countries-count');
+        const populationCircle = document.getElementById('population-progress');
+        const populationPct = document.getElementById('population-pct');
+        const populationCount = document.getElementById('population-count');
+
+        if (countriesCircle) countriesCircle.style.strokeDasharray = `${countryPct}, 100`;
+        if (countriesPct) countriesPct.textContent = `${countryPct}%`;
+        if (countriesCount) countriesCount.textContent = `${visitedCount}/${totalCountriesCount}`;
+        
+        if (populationCircle) populationCircle.style.strokeDasharray = `${popPct}, 100`;
+        if (populationPct) populationPct.textContent = `${popPct}%`;
+        if (populationCount) populationCount.textContent = `${popPct}%`;
+
+        // Translate labels
+        if (lang === 'es') {
+          const l1 = document.getElementById('label-countries-visited');
+          const l2 = document.getElementById('label-population-visited');
+          if (l1) l1.textContent = 'Países Visitados';
+          if (l2) l2.textContent = 'Población Mundial';
+        }
+      };
+
+      updateStats(countryMap, popData);
 
       // Load GeoJSON world borders
       fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
@@ -85,32 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'china': [35.8617, 104.1954],
             'russia': [61.5240, 105.3188],
             'united-kingdom': [54.3781, -3.4360]
-          };
-
-          const ISO_CODES = {
-            'south-korea': 'kr',
-            'china': 'cn',
-            'japan': 'jp',
-            'greece': 'gr',
-            'chad': 'td',
-            'canada': 'ca',
-            'united-states-of-america': 'us',
-            'ecuador': 'ec',
-            'france': 'fr',
-            'iceland': 'is',
-            'united-kingdom': 'gb',
-            'switzerland': 'ch',
-            'bolivia': 'bo',
-            'brazil': 'br',
-            'chile': 'cl',
-            'hong-kong': 'hk',
-            'mexico': 'mx',
-            'south-africa': 'za',
-            'thailand': 'th',
-            'uruguay': 'uy',
-            'spain': 'es',
-            'germany': 'de',
-            'italy': 'it'
           };
 
           const getCountryKey = (feature) => {
@@ -186,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => console.error('Failed to load GeoJSON:', err));
     })
-    .catch(err => console.error('Failed to load country data:', err));
+    .catch(err => console.error('Failed to load country or population data:', err));
 
   // Modal handling
   const modal = document.getElementById('country-modal');
@@ -195,13 +246,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalPosts = document.getElementById('modal-posts');
 
   const showCountryModal = (countryName, posts) => {
+    if (!modalCountry || !modalPosts || !modal) return;
     modalCountry.textContent = countryName;
     modalPosts.innerHTML = posts.map(p => `<li><a href="${p.url}">${p.title}</a> <small>(${p.date})</small></li>`).join('');
     modal.classList.remove('hidden');
   };
 
-  modalClose.addEventListener('click', () => modal.classList.add('hidden'));
-  modal.addEventListener('click', e => {
-    if (e.target === modal) modal.classList.add('hidden');
-  });
+  if (modalClose) {
+    modalClose.addEventListener('click', () => modal.classList.add('hidden'));
+  }
+  if (modal) {
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.add('hidden');
+    });
+  }
 });
