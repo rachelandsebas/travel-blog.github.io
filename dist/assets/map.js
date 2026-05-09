@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const countryPct = Math.min(100, Math.round((visitedCount / totalCountriesCount) * 100));
         const popPct = Math.min(100, Math.round((visitedPop / totalPop) * 100));
+        const visitedBillions = (visitedPop / 1000000000).toFixed(2);
+        const totalBillions = (totalPop / 1000000000).toFixed(1);
         
         // Update UI
         const countriesCircle = document.getElementById('countries-progress');
@@ -90,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (populationCircle) populationCircle.style.strokeDasharray = `${popPct}, 100`;
         if (populationPct) populationPct.textContent = `${popPct}%`;
-        if (populationCount) populationCount.textContent = `${popPct}%`;
+        if (populationCount) populationCount.textContent = `${visitedBillions}B / ${totalBillions}B`;
 
         // Translate labels
         if (lang === 'es') {
