@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updateStats(countryMap, popData);
 
       // Load GeoJSON world borders
-      fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+      fetch('https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson')
         .then(r => r.json())
         .then(geoData => {
           console.log('Loaded GeoJSON data');
@@ -150,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'south-africa': 'south-africa',
             'sudáfrica': 'south-africa',
             'hong-kong': 'hong-kong',
+            'hong-kong-s.a.r.': 'hong-kong',
+            'hong-kong-sar': 'hong-kong',
+            'hong-kong-special-administrative-region-of-china': 'hong-kong',
             'china': 'china',
             'iceland': 'iceland',
             'islandia': 'iceland',
@@ -163,7 +166,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'canada': [56.1304, -106.3468],
             'china': [35.8617, 104.1954],
             'russia': [61.5240, 105.3188],
-            'united-kingdom': [54.3781, -3.4360]
+            'united-kingdom': [54.3781, -3.4360],
+            'chile': [-33.0, -71.0], // Centered near Santiago/Valparaiso for better visibility
+            'south-africa': [-29.0, 24.0] // Central South Africa
           };
 
           const getCountryKey = (feature) => {
