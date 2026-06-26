@@ -34,11 +34,11 @@ La Navidad también es el cumpleaños de la tía Anita. ¡Este año sus hijos la
 Los padres de Sebastián son famosos por sus cangrejadas. Después de ver al lado de la familia del papá de Sebastián, el lado de su mamá vino a almorzar cangrejos.
 
 ::: carousel
-![Cangrejada](images/Grandparents_1.jpeg)
+![Con los abuelitos](images/Grandparents_1.jpeg)
 ![Cangrejada](images/Grandparents_2.jpeg)
-![Cangrejada](images/Grandparents_3.jpeg)
-![Cangrejada](images/Grandparents_4.jpeg)
-![Cangrejada](images/Grandparents_5.jpeg)
+![Rachel, Sebas, un cangrejo](images/Grandparents_3.jpeg)
+![Familia](images/Grandparents_4.jpeg)
+![Familia](images/Grandparents_5.jpeg)
 :::
 
 También pudimos ver a muchos de los amigos de la secundaria de Sebastián. ¡Hablamos, jugamos y fuimos a una pista de Go Karts!
@@ -72,7 +72,7 @@ Una noche, el tío Leonardo de Sebastián, que es agricultor, trajo una pierna d
 
 Olía increíble. El tío Leonardo vino en taxi, y el pobre taxista tuvo que pasar 40 minutos con esa comida deliciosa y tentadora allí. Lo justo era que le dieran un plato a él también.
 
-¡¡Esa sola pierna de cerdo alcanzó para más de veinticuatro personas y estuvo deliciosa!!
+¡Esa sola pierna de cerdo alcanzó para más de veinticuatro personas y estuvo deliciosa!
 
 ::: carousel
 ![Sirviendo el chancho](images/Chancho_1.jpg)

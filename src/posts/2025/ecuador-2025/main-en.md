@@ -34,11 +34,11 @@ Christmas is also Sebastián’s Aunt Ana’s birthday. This year, her kids surp
 Sebastián’s parents are famous for their crab feasts. After getting to see Sebastián’s dad’s side of the family, his mom’s side came over for a crab lunch.
 
 ::: carousel
-![Crab feast](images/Grandparents_1.jpeg)
-![Crab feast](images/Grandparents_2.jpeg)
-![Crab feast](images/Grandparents_3.jpeg)
-![Crab feast](images/Grandparents_4.jpeg)
-![Crab feast](images/Grandparents_5.jpeg)
+![With Grandparents](images/Grandparents_1.jpeg)
+![Enjoying crabs](images/Grandparents_2.jpeg)
+![Rachel, Sebastian, a crab](images/Grandparents_3.jpeg)
+![Family](images/Grandparents_4.jpeg)
+![Family](images/Grandparents_5.jpeg)
 :::
 
 We also got to see many of Sebastián’s friends from high school. We talked, played games, and went to a Go Kart track!
