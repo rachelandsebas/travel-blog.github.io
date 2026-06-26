@@ -118,13 +118,19 @@ function getMarkedRenderer(tripSlug, assetPath) {
       src = `${assetPath}assets/images/trips/${tripSlug}/${href.replace('images/', '')}`;
     }
     
-    let imgHtml = `<img src="${src}" alt="${text || ''}"`;
-    if (title) imgHtml += ` title="${title}"`;
-    imgHtml += ` />`;
+    const isVideo = href && (typeof href === 'string') && href.toLowerCase().endsWith('.mp4');
+    let mediaHtml;
+    if (isVideo) {
+      mediaHtml = `<video controls><source src="${src}" type="video/mp4">Your browser does not support the video tag.</video>`;
+    } else {
+      mediaHtml = `<img src="${src}" alt="${text || ''}"`;
+      if (title) mediaHtml += ` title="${title}"`;
+      mediaHtml += ` />`;
+    }
     
     return `
-      <div class="image-wrapper">
-        ${imgHtml}
+      <div class="image-wrapper${isVideo ? ' video-wrapper' : ''}">
+        ${mediaHtml}
         ${text ? `<div class="image-caption">${text}</div>` : ''}
       </div>
     `;
