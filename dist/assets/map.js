@@ -22,9 +22,45 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load country‑to‑posts mapping (language specific)
   const lang = document.documentElement.lang || 'en';
   
+  const populationFetch = fetch('https://restcountries.com/v3.1/all?fields=cca2,population')
+    .then(r => r.json())
+    .catch(err => {
+      console.warn('Population API unavailable, skipping population stats.', err);
+      return [];
+    });
+
+  const WORLD_POPULATION = 8000000000;
+  const POPULATION_FALLBACK = {
+    us: 334000000,
+    ca: 38600000,
+    kr: 51700000,
+    cn: 1412600000,
+    jp: 125800000,
+    gr: 10400000,
+    td: 17000000,
+    ec: 17600000,
+    fr: 65000000,
+    is: 376000,
+    gb: 67200000,
+    ch: 8700000,
+    bo: 11600000,
+    br: 216000000,
+    cl: 19800000,
+    hk: 7500000,
+    mx: 126000000,
+    za: 60900000,
+    th: 70100000,
+    uy: 3470000,
+    es: 47300000,
+    de: 83100000,
+    it: 59500000
+  };
+
+  const countryDataUrl = `${window.BASE_URL || ''}/data/countries-${lang}.json`.replace(/\/\/{2,}/g, '/');
+
   Promise.all([
-    fetch(`${window.BASE_URL || ''}/data/countries-${lang}.json`).then(r => r.json()),
-    fetch('https://restcountries.com/v3.1/all?fields=cca2,population').then(r => r.json())
+    fetch(countryDataUrl).then(r => r.json()),
+    populationFetch
   ])
     .then(([countryMap, popData]) => {
       console.log('Loaded country data and population data');
@@ -60,23 +96,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const visitedCount = visitedKeys.length;
         const totalCountriesCount = 195; // UN recognized
         
-        let visitedPop = 0;
-        let totalPop = 0;
-        
         const visitedIsoCodes = visitedKeys.map(k => ISO_CODES[k]).filter(Boolean);
+        const popIndex = popData.reduce((index, c) => {
+          const code = c.cca2 && c.cca2.toLowerCase();
+          if (code) index[code] = c.population || 0;
+          return index;
+        }, {});
         
-        popData.forEach(c => {
-          const pop = c.population || 0;
-          totalPop += pop;
-          if (visitedIsoCodes.includes(c.cca2.toLowerCase())) {
-            visitedPop += pop;
-          }
+        let visitedPop = 0;
+        const totalPop = popData.length ? popData.reduce((sum, c) => sum + (c.population || 0), 0) : WORLD_POPULATION;
+        visitedIsoCodes.forEach(code => {
+          visitedPop += popIndex[code] || POPULATION_FALLBACK[code] || 0;
         });
         
         const countryPct = Math.min(100, Math.round((visitedCount / totalCountriesCount) * 100));
-        const popPct = Math.min(100, Math.round((visitedPop / totalPop) * 100));
+        const popPct = totalPop ? Math.min(100, Math.round((visitedPop / totalPop) * 100)) : 0;
         const visitedBillions = (visitedPop / 1000000000).toFixed(2);
         const totalBillions = (totalPop / 1000000000).toFixed(1);
+        const populationText = `${visitedBillions}B / ${totalBillions}B`;
         
         // Update UI
         const countriesCircle = document.getElementById('countries-progress');
@@ -92,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (populationCircle) populationCircle.style.strokeDasharray = `${popPct}, 100`;
         if (populationPct) populationPct.textContent = `${popPct}%`;
-        if (populationCount) populationCount.textContent = `${visitedBillions}B / ${totalBillions}B`;
+        if (populationCount) populationCount.textContent = populationText;
 
         // Translate labels
         if (lang === 'es') {
