@@ -33,8 +33,13 @@
   ],
   "canada": [
     {
-      "title": "Toronto/Banff 2025",
-      "url": "/es/posts/toronto-banff-2025-main-es.html",
+      "title": "Toronto 2025",
+      "url": "/es/posts/toronto-banff-2025-toronto-es.html",
+      "date": "2025-06-11"
+    },
+    {
+      "title": "Alberta 2025",
+      "url": "/es/posts/toronto-banff-2025-alberta-es.html",
       "date": "2025-06-05"
     },
     {
