@@ -33,9 +33,26 @@ Christmas is also Sebastián’s Aunt Ana’s birthday. This year, her kids surp
 
 Sebastián’s parents are famous for their crab feasts. After getting to see Sebastián’s dad’s side of the family, his mom’s side came over for a crab lunch.
 
+::: carousel
+![Crab feast](images/Grandparents_1.jpeg)
+![Crab feast](images/Grandparents_2.jpeg)
+![Crab feast](images/Grandparents_3.jpeg)
+![Crab feast](images/Grandparents_4.jpeg)
+![Crab feast](images/Grandparents_5.jpeg)
+:::
+
 We also got to see many of Sebastián’s friends from high school. We talked, played games, and went to a Go Kart track!
 
 While at the Go Kart place, we just happened to run into Christopher, a friend of Sebastián’s from doing math competitions in high school.
+
+::: carousel
+![With friends](images/Friends_1.jpeg)
+![GoKarting](images/Friends_2.jpeg)
+![GoKarting](images/Friends_3.jpeg)
+![Teresa](images/Friends_4.jpeg)
+![Sebastian](images/Friends_5.jpeg)
+![Sebastián & Christopher](images/Friends_6.jpeg)
+:::
 
 We had a lovely time with family. Lots of good conversations, delicious food, and a cute iguana visitor. We got to celebrate Giovanny’s employee’s 10 year anniversary at the company.
 
@@ -45,7 +62,10 @@ During down-time we also had fun playing virtual escape rooms (thank you, Jonath
 ![Going out for breakfast](images/Bolon_1.jpeg)
 ![At the restaurant](images/Bolon_2.jpeg)
 ![Bolon](images/Bolon_3.jpeg)
+![Iguana visitor](images/Iguana_1.jpg)
 ![10 year anniversary](images/Coworkers_1.jpeg)
+![New Year’s Eve photos](images/Coworkers_2.jpeg)
+![Doing a virtual escape room](images/Escape_1.jpg)
 :::
 
 One evening, Sebastián’s Uncle Leonardo, who is a farmer, brought over a whole leg of pork, which he had roasted himself.
@@ -60,8 +80,15 @@ That one leg of pork served over twenty people, and was delicious!!
 ![Sebastián’s favourite photo!](images/Chancho_3.jpeg)
 ![Leonardo, Sebastián, Teresa](images/Chancho_4.jpeg)
 ![Sebastián is happy](images/Chancho_5.jpg.jpeg)
+![With cousins](images/Family_1.jpeg)
 :::
 
 ## Last Day
 
 On New Year’s Eve, we had to head back home. We went out for bolon one last time, and then headed to the airport.
+
+::: carousel
+![At the restaurant](images/LastDay_1.jpeg)
+![At the airport](images/LastDay_2.jpeg)
+![Rachel & Teresa](images/LastDay_3.jpeg)
+:::
