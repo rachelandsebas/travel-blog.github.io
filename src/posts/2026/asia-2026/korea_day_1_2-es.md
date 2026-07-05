@@ -21,8 +21,8 @@ counterpart: korea-day-1-2-en
 # Bus al hotel
 
 ::: carousel
-![¡Me encantó esto! Algunos carriles están pintados de colores, haciendo juego con las señales de tránsito, para indicarte por dónde ir con solo seguir los colores. ¡Toronto necesita esto!](images/5_bus.jpg)
-![En serio. No puedes escapar de Canadá 😂. Este Tims está a 3 minutos caminando de mi hotel.](images/6_tims.jpg)
+![¡Me encantó esto! Algunos carriles están pintados de colores, haciendo juego con las señales de tránsito, para indicarte por dónde ir. ¡Toronto necesita esto!](images/5_bus.jpg)
+![En serio. No puedes escapar de Canadá 😂. Este Tims está a 3 minutos caminando de mi hotel. Aparentemente Seúl tiene como 20!](images/6_tims.jpg)
 ![Había muchísimos restaurantes cerca del hotel. Pedí las costillas de cerdo pequeñas... 😂. Estaban muy buenas, solo un poquito más picantes de lo que quería en ese momento.](images/7_restaurants.jpg)
 :::
 
@@ -70,9 +70,9 @@ No hay mucho más que compartir sin fotos del túnel, pero sí fue todo un ejerc
 ![](images/12_tunnel_3.jpg)
 :::
 
-# Almuerzo (buffet)
+## Almuerzo (buffet)
 
-[Esto es lo que esperaba que fueran las comidas en Corea, al menos por lo que veía en mis redes sociales. ¡Cumplió con las expectativas!](images/13_buffet.jpg)
+![Esto es lo que esperaba que fueran las comidas en Corea, al menos por lo que veía en mis redes sociales. ¡Cumplió con las expectativas!](images/13_buffet.jpg)
 
 ## Datos interesantes
 
@@ -84,14 +84,14 @@ Advertencia: Esto es lo que recuerdo de la explicación de la guía. Créelo baj
 4. Ambos países siguen provocándose de otras maneras. En la DMZ ponen altavoces con propaganda (Corea del Norte) o con K-pop (Corea del Sur). Corea del Norte también bloquea la señal y envía globos con basura hacia el sur.
 5. Haber visitado Corea del Sur por tu cuenta hace muy poco probable que algún día puedas visitar Corea del Norte, que ya de por sí es bastante difícil.
 
-# Meongdong
+# Myeongdong
 
-Este era el punto de encuentro del tour, así que me dejaron aquí al terminar. Aproveché el tiempo para recorrer la zona. Es un área comercial muy concurrida, con mucha comida callejera y tiendas. ¡Lo del skincare coreano no es broma! ¡Había montones de tiendas relacionadas con cuidado de la piel por todas partes!
+Este era el punto de encuentro del tour, así que me dejaron aquí al terminar. Aproveché el tiempo para recorrer la zona. Es un área comercial muy concurrida, con mucha comida callejera y tiendas. El skincare coreano no es broma. Había montones de tiendas relacionadas con el cuidado de la piel por todas partes.
 
 ::: carousel
 ![](images/14_meongdong.jpg)
-![](images/14_dinner.jpg)
-![](images/14_drink.mp4)
+![Pulpo a la parrilla para la cena](images/14_dinner.jpg)
+![Batido instantáneo en la tienda de conveniencia](images/14_drink.mp4)
 ![](images/14_gongcha.jpg)
 ![](images/14_buldak.jpg)
 :::
