@@ -72,7 +72,7 @@ Most of the time we enjoyed hanging out, talking, and spending time together.
 ![Rachel and Grandma had a lot of fun going through old photos. This is Grandma as a child](images/relax_3.jpg)
 ![Grandpa making fun of Rachel’s shawl](images/relax_4.jpg)
 ![Grandma with her little dog (foreshadowing Doggie!)](images/relax_5.jpg)
-![Grandpa’s hearing had been going for many years; we spent the whole week shouting so he could hear us!](images/relax_6.jpg)
+![Grandpa’s was losing his hearing (we spent the whole week shouting so he could hear us!), but he was adamantly against hearing aids. Rachel and Sebastián gifted him some to try, and he was pleasantly shocked at the difference and kept asking us why we were shouting, haha.](images/relax_6.jpg)
 :::
 
 Overall we had a lovely time with the grandparents. Lots of wonderful memories.
