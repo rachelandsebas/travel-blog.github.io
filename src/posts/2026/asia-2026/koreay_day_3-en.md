@@ -19,7 +19,7 @@ counterpart: korea-day-3-es
 ![Had some raw crab for lunch. First time having it raw, and it was really good!](images/19_lunch.jpg)
 :::
 
-# Gwanghwamun Square - First Attempt
+# Gwanghwamun Square
 
 After lunch, I wanted to go to Gwanghwamun Square, but it started pouring and we decided not to. There was a libray in the venue that I decided to checkout in the meantime (Startfield Library).
 

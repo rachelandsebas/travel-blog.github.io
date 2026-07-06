@@ -19,7 +19,7 @@ counterpart: korea-day-3-en
 ![Tuve cangrejo crudo para el almuerzo. ¡La primera vez que lo probaba crudo y estaba realmente bueno!](images/19_lunch.jpg)
 :::
 
-# Plaza Gwanghwamun - Primer intento
+# Plaza Gwanghwamun
 
 Después del almuerzo, quería ir a la plaza Gwanghwamun, pero empezó a llover muchísimo y decidimos no ir. Había una biblioteca en el recinto a la que decidí entrar mientras tanto (Startfield Library).
 
