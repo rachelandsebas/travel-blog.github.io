@@ -6,7 +6,7 @@ country: Korea
 theme: korea
 excerpt: 
 cover_image: ""
-counterpart: korea-day-1-2-es
+counterpart: korea_day_1_2-es
 ---
 
 # The flight to Korea

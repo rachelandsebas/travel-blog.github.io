@@ -6,7 +6,7 @@ country: Corea
 theme: korea
 excerpt: 
 cover_image: "images/28_dinner_4.jpg"
-counterpart: korea-day-4-en
+counterpart: korea_day_4-en
 ---
 
 # Desayuno

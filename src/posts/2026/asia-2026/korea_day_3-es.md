@@ -6,7 +6,7 @@ country: Corea
 theme: korea
 excerpt: 
 cover_image: "images/15_icml.jpg"
-counterpart: korea-day-3-en
+counterpart: korea-day_3-en
 ---
 
 # ICML

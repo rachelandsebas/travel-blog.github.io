@@ -6,7 +6,7 @@ country: Korea
 theme: korea
 excerpt: 
 cover_image: "images/32_naksan_park_15.jpg"
-counterpart: korea-day-4-es
+counterpart: korea_day_5-es
 ---
 
 # Breakfast
