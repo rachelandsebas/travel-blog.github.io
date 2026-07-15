@@ -22,8 +22,6 @@ La ceremonia de apertura siempre es emocionante. Hubo discursos geniales y actua
 ![](images/55_opening_2.jpg)
 ![](images/55_opening_3.jpg)
 ![](images/55_opening_4.jpg)
-![](images/55_opening_5.mp4)
 ![](images/55_opening_6.jpg)
 ![](images/55_opening_7.jpg)
-![](images/55_opening_8.mp4)
 :::
