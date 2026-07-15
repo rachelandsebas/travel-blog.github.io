@@ -1,4 +1,21 @@
 {
+  "china": [
+    {
+      "title": "China Día 5",
+      "url": "/es/posts/asia-2026-china_day_3-es.html",
+      "date": "2026-07-15"
+    },
+    {
+      "title": "China Día 4",
+      "url": "/es/posts/asia-2026-china_day_2-es.html",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "China Día 1-3",
+      "url": "/es/posts/asia-2026-china_day_1-es.html",
+      "date": "2026-07-11"
+    }
+  ],
   "south-korea": [
     {
       "title": "Corea Día 7",
