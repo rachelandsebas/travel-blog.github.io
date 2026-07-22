@@ -432,6 +432,33 @@ nav {
   color: var(--primary-color);
 }
 
+.post-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.post-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.post-nav-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent-color);
+}
+
 .post-content {
   font-size: 1.1rem;
 }

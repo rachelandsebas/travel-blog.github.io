@@ -354,6 +354,27 @@ function generatePostPages(lang) {
 
     const renderer = getMarkedRenderer(post.tripSlug, assetPath);
     
+    const tripPosts = posts
+      .filter(p => p.tripSlug === post.tripSlug)
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
+    const currentIndex = tripPosts.findIndex(p => p.slug === post.slug);
+    const prevPost = tripPosts[currentIndex - 1];
+    const nextPost = tripPosts[currentIndex + 1];
+
+    const prevLabel = lang === 'en' ? 'Previous' : 'Anterior';
+    const nextLabel = lang === 'en' ? 'Next' : 'Siguiente';
+    let postNav = '';
+    if (prevPost || nextPost) {
+      postNav = '<div class="post-nav">';
+      if (prevPost) {
+        postNav += `<a class="post-nav-link prev" href="${prevPost.slug}.html">&larr; ${prevLabel}: ${prevPost.title}</a>`;
+      }
+      if (nextPost) {
+        postNav += `<a class="post-nav-link next" href="${nextPost.slug}.html">${nextLabel}: ${nextPost.title} &rarr;</a>`;
+      }
+      postNav += '</div>';
+    }
+
     // Support custom carousel syntax: ::: carousel ... :::
     let processedContent = post.rawContent.replace(/::: carousel\s*([\s\S]*?)\n:::/g, '<div class="carousel">\n\n$1\n\n</div>');
     
@@ -374,7 +395,8 @@ function generatePostPages(lang) {
       .replace(/{{ES_ACTIVE}}/g, lang === 'es' ? 'active' : '')
       .replace(/{{EN_URL}}/g, enUrl)
       .replace(/{{ES_URL}}/g, esUrl)
-      .replace(/{{BURGER_MENU}}/g, getBurgerMenuHtml(lang));
+      .replace(/{{BURGER_MENU}}/g, getBurgerMenuHtml(lang))
+      .replace(/{{POST_NAV}}/g, postNav);
 
     // Back to Trip link
     const trip = tripsByLang[lang].find(t => t.slug === post.tripSlug);
