@@ -24,7 +24,6 @@ We took a cable car up to the wall and walked along the wall from tower to tower
 ![](images/96_wall_2.jpg)
 ![](images/96_wall_3.jpg)
 ![](images/96_wall_4.jpg)
-![](images/96_wall_5.jpg)
 ![](images/96_wall_6.jpg)
 ![](images/96_wall_7.jpg)
 ![](images/96_wall_8.jpg)

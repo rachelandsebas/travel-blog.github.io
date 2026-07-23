@@ -24,7 +24,6 @@ Tomamos un teleférico hasta la muralla y caminamos a lo largo de ella de torre 
 ![](images/96_wall_2.jpg)
 ![](images/96_wall_3.jpg)
 ![](images/96_wall_4.jpg)
-![](images/96_wall_5.jpg)
 ![](images/96_wall_6.jpg)
 ![](images/96_wall_7.jpg)
 ![](images/96_wall_8.jpg)
