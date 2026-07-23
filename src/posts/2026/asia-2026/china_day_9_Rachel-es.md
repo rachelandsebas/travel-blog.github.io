@@ -5,7 +5,7 @@ lang: es
 country: China
 theme: china
 excerpt: 
-cover_image: "images/56_disney_2.jpg"
+cover_image: "images/93_shanghai_1.jpeg"
 counterpart: china_day_9_Rachel-en
 ---
 
@@ -14,6 +14,8 @@ counterpart: china_day_9_Rachel-en
 Salí temprano del hotel porque no estaba segura de cuánto problema podría tener para ubicar el metro. Resulta que fue bastante sencillo. Tienen señalización increíble y todo está tanto en chino como en inglés.
 
 ::: carousel
+![](images/91_train_1.jpeg)
+![](images/91_train_2.jpeg)
 :::
 
 # Tour gastronómico
@@ -35,11 +37,28 @@ Con la guía probamos:
 8. Café: este café está mezclado con un poco de vino tinto, lo que le da un sabor... interesante. Tomamos este café en un café para perros. Rachel estaba feliz :).
 
 ::: carousel
+![](images/92_food_1.jpeg)
+![](images/92_food_2.jpeg)
+![](images/92_food_3.jpeg)
+![](images/92_food_4.jpeg)
+![](images/92_food_5.jpeg)
+![](images/92_food_6.jpeg)
+![](images/92_food_7.jpeg)
+![](images/92_food_8.jpeg)
+![](images/92_food_9.jpeg)
+![](images/92_food_10.jpeg)
+![](images/92_food_11.jpeg)
+![](images/92_food_12.jpeg)
+![](images/92_food_13.jpeg)
+![](images/92_food_14.jpeg)
 :::
 
 # Explorando Shanghái
 
 ::: carousel
+![](images/93_shanghai_1.jpeg)
+![](images/93_shanghai_2.jpeg)
+![](images/93_shanghai_3.jpeg)
 :::
 
 # ¡Sra. Mary!
@@ -49,8 +68,19 @@ La Sra. Mary es una amiga cercana de la familia y prácticamente mi segunda madr
 Pasamos un tiempo encantador charlando y poniéndonos al día, y pude viajar con su grupo a un museo de vidrio.
 
 ::: carousel
+![](images/94_mary_1.jpeg)
+![](images/94_mary_2.jpeg)
+![](images/94_mary_3.jpeg)
+![](images/94_mary_4.jpeg)
+![](images/94_mary_5.jpeg)
+![](images/94_mary_6.jpeg)
 :::
 
 # Cena
 
-Estaba extremadamente cansada y hambrienta, pero encontré un restaurante de Xiaolongbao. Me sentí mucho mejor después de la comida.
+Estaba extremadamente cansada y hambrienta, pero fui a Nanjing Road (Times Square de Shanghai) y encontré un restaurante de Xiaolongbao. Me sentí mucho mejor después de la comida.
+
+::: carousel
+![](images/95_nanjing_1.jpeg)
+![](images/95_nanjing_2.jpeg)
+:::

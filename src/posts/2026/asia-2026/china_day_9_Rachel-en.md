@@ -5,7 +5,7 @@ lang: en
 country: China
 theme: china
 excerpt: 
-cover_image: "images/56_disney_2.jpg"
+cover_image: "images/93_shanghai_1.jpeg"
 counterpart: china_day_9_Rachel-es
 ---
 
@@ -14,14 +14,13 @@ My first morning in Shanghai, I had a breakfast tour booked!
 I left the hotel early as I wasn't sure how much trouble I'd have figuring out the subways. It turns out it was quite straighforward! They have amazing signage and everything is in both Chinese and English. 
 
 ::: carousel
+![](images/91_train_1.jpeg)
+![](images/91_train_2.jpeg)
 :::
 
 # Food Tour
 
 My tour was a breakfast tour of the French Concession. When the China was forced to open its borders by Britain in the early 1900s, this neighbourhood was where most foreigners lived, so still has a lot of European architecture.
-
-::: carousel
-:::
 
 With the guide we tried:
 
@@ -36,11 +35,28 @@ With the guide we tried:
 
 
 ::: carousel
+![](images/92_food_1.jpeg)
+![](images/92_food_2.jpeg)
+![](images/92_food_3.jpeg)
+![](images/92_food_4.jpeg)
+![](images/92_food_5.jpeg)
+![](images/92_food_6.jpeg)
+![](images/92_food_7.jpeg)
+![](images/92_food_8.jpeg)
+![](images/92_food_9.jpeg)
+![](images/92_food_10.jpeg)
+![](images/92_food_11.jpeg)
+![](images/92_food_12.jpeg)
+![](images/92_food_13.jpeg)
+![](images/92_food_14.jpeg)
 :::
 
 # Exploring Shanghai
 
 ::: carousel
+![](images/93_shanghai_1.jpeg)
+![](images/93_shanghai_2.jpeg)
+![](images/93_shanghai_3.jpeg)
 :::
 
 # Ms Mary!
@@ -50,8 +66,20 @@ Ms Mary is a close family friend and practically my second mother. She just so h
 We had a lovely time chatting and catching up and I got to travel with her group to a glass museum.
 
 ::: carousel
+![](images/94_mary_1.jpeg)
+![](images/94_mary_2.jpeg)
+![](images/94_mary_3.jpeg)
+![](images/94_mary_4.jpeg)
+![](images/94_mary_5.jpeg)
+![](images/94_mary_6.jpeg)
 :::
 
 # Dinner
 
-I was extremely tired and hungry, but found a Xiaolongbao restaurant. Felt sooo much better after the food. 
+I was extremely tired and hungry, but went to Nanjing Road (Times Square of Shanghai) and found a Xiaolongbao restaurant. Felt sooo much better after the food.
+
+::: carousel
+![](images/95_nanjing_1.jpeg)
+![](images/95_nanjing_2.jpeg)
+:::
+

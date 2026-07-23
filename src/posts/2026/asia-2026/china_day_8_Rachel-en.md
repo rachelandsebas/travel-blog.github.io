@@ -5,11 +5,17 @@ lang: en
 country: China
 theme: china
 excerpt: 
-cover_image: "images/56_disney_2.jpg"
+cover_image: "images/88_tokyo_6.jpeg"
 counterpart: china_day_8_Rachel-es
 ---
 
 My journey started on the 18th. I flew Toronto to Tokyo and then Tokyo to Shanghai
+
+::: carousel
+![](images/89_trip_1.jpeg)
+![](images/89_trip_2.jpeg)
+![](images/89_trip_3.jpeg)
+:::
 
 # Tokyo
 I had a few hours layover in Tokyo, during which I had to exit, switch terminals, and check in again. A few things stood out to me:
@@ -17,6 +23,12 @@ I had a few hours layover in Tokyo, during which I had to exit, switch terminals
 2. There were lots of features to make things more accessible from quite rooms, to baby seats in the washroom, to auditory notifications of walkways ending.
 
 ::: carousel
+![](images/88_tokyo_1.jpeg)
+![](images/88_tokyo_2.jpeg)
+![](images/88_tokyo_3.jpeg)
+![](images/88_tokyo_4.jpeg)
+![](images/88_tokyo_5.jpeg)
+![](images/88_tokyo_6.jpeg)
 :::
 
 # Shanghai
@@ -26,3 +38,7 @@ Throughout the trip, but especially on arrival to Shanghai, I was grateful for t
 At immigration in Shanghai, I was asked for the hotel reservations and proof of exit flight, and I was grateful to be able to just flip to the right page instead of digging through emails.
 
 After making it in, I got my bag and ordered a Didi (Uber equivalent) to my hotel. The Didi dropped me off at an intersection. I'd been following along on maps, so I could see it was the right place, but when I got out of the car I couldn't which building was the hotel. There were no signs anywhere. I looked at maps again and thought maybe it was around the corner, so I started walking there. An old security guard waived me over and asked "Dayin?" (named of my hotel), I nodded. He pointed to building in front of us and with no words conveyed that it was on the second floor. I could tell this was not the first time he guided a lost foreigner looking for the hotel. Gratefully I turned back to the building and once inside found the hotel. Only three days later, when Sebastian came to visit, did he show me that there was a main entrace around the corner which had big signs.
+
+::: carousel
+![My bunk at the hostel - very cozy.](images/90_shanghai.jpeg)
+:::

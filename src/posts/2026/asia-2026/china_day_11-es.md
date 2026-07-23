@@ -74,6 +74,7 @@ Supongo que China también los tiene?
 # Trenes
 
 ::: carousel
+![](images/80_train_3.jpeg)
 ![](images/80_train_1.jpg)
 ![](images/80_train_2.jpg)
 :::
