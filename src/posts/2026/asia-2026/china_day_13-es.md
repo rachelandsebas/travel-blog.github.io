@@ -90,7 +90,7 @@ La zona es hermosa y pacífica y fue uno de mis lugares favoritos del viaje.
 
 Como algunos sabrán, tenemos un mapa para raspar en la pared y estamos tratando de comer platos de cada país del mundo. Vimos que Pekín tenía un restaurante norcoreano y planeamos ir porque conseguir comida norcoreana es bastante difícil. Sin embargo, nos dimos cuenta a último momento de que la cadena está gestionada y operada por el gobierno norcoreano y sus ingresos se usan para financiar el régimen actual, así que decidimos no ir.
 
-En su lugar encontramos un restaurante de fideos recomendado por la guía Michelin que estaba de camino. Después de la cena dimos un paseo y tomamos algunas bebidas frutales y postres (Tanghulu, frutas acarameladas).
+En su lugar encontramos un restaurante de fideos recomendado por la guía Michelin que estaba de camino a nuestro hotel. Después de la cena dimos un paseo y tomamos algunas bebidas frutales y postres (Tanghulu, frutas acarameladas).
 
 ::: carousel
 ![](images/98_dinner_1.jpg)

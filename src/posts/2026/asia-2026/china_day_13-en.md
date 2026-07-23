@@ -90,7 +90,7 @@ The area is beautiful and peaceful and was one of my favourite place we have bee
 
 As some of you may know, we have a scratch off map on our wall and we are trying to eat food from every country in the world. We saw that Beijing had a North Korean restaurant and had planned to go there as getting North Korean is quite challenging. However, we realized last minute that the restaurant chain is managed and operated by the North Korean goverment and it's revenue is used to fund the current regimen so we decided not to go.
 
-In it's place, we found a highly recommended Michelin guide noodle restaurant that was on the way to our restaurant. After dinner, we walked around and got some fruity drinks and dessert (Tanghulu, candied fruits).
+In it's place, we found a highly recommended Michelin guide noodle restaurant that was on the way to our hotel. After dinner, we walked around and got some fruity drinks and dessert (Tanghulu, candied fruits).
 
 ::: carousel
 ![](images/98_dinner_1.jpg)
