@@ -107,8 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateLightbox() {
       const img = currentGallery[currentIndex];
       lightboxImg.src = img.src;
-      lightboxCaption.textContent = img.alt || "";
-      
+      const captionText = (img.alt || "").trim();
+      if (lightboxCaption) {
+        lightboxCaption.textContent = captionText;
+        // Hide the caption element if there's no text
+        lightboxCaption.style.display = captionText ? 'block' : 'none';
+      }
+
       // Show/hide nav buttons based on gallery size
       if (currentGallery.length > 1) {
         lightboxPrev.style.display = 'block';

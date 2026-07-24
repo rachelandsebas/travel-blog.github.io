@@ -2,8 +2,8 @@
 title: "Asia 2026"
 date: "2026-04-01"
 lang: "es"
-cover_image: ""
+cover_image: "images/96_wall_14.jpg"
 counterpart: "asia-2026-en"
 ---
 
-¡Mi increíble viaje por Asia!
+¡Nuestro increíble viaje por Asia!

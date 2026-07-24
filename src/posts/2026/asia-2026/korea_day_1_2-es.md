@@ -5,7 +5,7 @@ lang: es
 country: Corea
 theme: korea
 excerpt: 
-cover_image: ""
+cover_image: "images/12_tunnel_1.jpg"
 counterpart: korea_day_1_2-en
 ---
 
