@@ -526,29 +526,34 @@ function generateHomePage(lang) {
     `;
   }
 
-  // 4 Most Recent Posts Globally
-  const recentPosts = postsByLang[lang].slice(0, 4);
+  // 4 Most Recent Trips (show most recent trips by trip date)
+  const recentTrips = tripsByLang[lang].slice(0, 4);
   let postsHtml = '';
-  recentPosts.forEach(post => {
-    const postUrl = BASE_URL + `${langPrefix}/posts/${post.slug}.html`;
-        const imgSrc = post.cover_image && post.cover_image.startsWith('http')
-          ? post.cover_image
-          : (post.cover_image && post.cover_image.startsWith('images/')
-            ? `${BASE_URL}/assets/images/trips/${post.tripSlug}/${post.cover_image.replace('images/', '')}`
-            : (post.cover_image ? `${BASE_URL}/${post.cover_image.replace(/^\//, '')}` : ''));
+  recentTrips.forEach(trip => {
+    const tripUrl = BASE_URL + `${langPrefix}/trips/${trip.slug}/index.html`;
+    let imgSrc = '';
+    if (trip.cover_image) {
+      if (trip.cover_image.startsWith('http')) {
+        imgSrc = trip.cover_image;
+      } else if (trip.cover_image.startsWith('images/')) {
+        imgSrc = `${BASE_URL}/assets/images/trips/${trip.slug}/${trip.cover_image.replace('images/', '')}`;
+      } else {
+        imgSrc = `${BASE_URL}/${trip.cover_image.replace(/^\//, '')}`;
+      }
+    }
 
-    const coverImage = imgSrc ? `<img src="${imgSrc}" alt="${post.title}" class="post-card-img">` : '';
+    const coverImage = imgSrc ? `<img src="${imgSrc}" alt="${trip.title}" class="post-card-img">` : '';
 
     postsHtml += `
-      <a href="${postUrl}" class="post-card theme-${post.theme || 'default'}">
+      <a href="${tripUrl}" class="post-card theme-${trip.theme || 'default'}">
         ${coverImage}
         <div class="post-card-content">
           <div class="post-meta">
-            <span>${post.date}</span>
-            <span class="country-tag">${post.country || 'Global'}</span>
+            <span>${trip.date}</span>
+            <span class="country-tag">${trip.country || 'Global'}</span>
           </div>
-          <h2 class="post-title">${post.title}</h2>
-          <p class="post-excerpt">${post.excerpt || ''}</p>
+          <h2 class="post-title">${trip.title}</h2>
+          <p class="post-excerpt">${trip.excerpt || ''}</p>
         </div>
       </a>
     `;

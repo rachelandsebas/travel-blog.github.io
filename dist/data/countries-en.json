@@ -1,5 +1,22 @@
 {
+  "asia": [
+    {
+      "title": "Cultural Observations & Other Thoughts",
+      "url": "/posts/asia-2026-cultural-en.html",
+      "date": "2026-08-05"
+    },
+    {
+      "title": "Trip Summary",
+      "url": "/posts/asia-2026-summary-en.html",
+      "date": "2026-08-04"
+    }
+  ],
   "japan": [
+    {
+      "title": "Japan Day 10",
+      "url": "/posts/asia-2026-japan_day_10-en.html",
+      "date": "2026-08-03"
+    },
     {
       "title": "Japan Day 9",
       "url": "/posts/asia-2026-japan_day_9-en.html",
