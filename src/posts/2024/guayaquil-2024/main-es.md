@@ -10,7 +10,7 @@ counterpart: main-en
 
 Este fue un viaje inesperado a Guayaquil. Rachel y yo acabábamos de visitar a su familia en Halifax por Navidad y no planeábamos ir a Ecuador. Aunque a principios de año sí habíamos planeado visitar Ecuador, yo acababa de solicitar la residencia permanente en Canadá y, debido a las huelgas del servicio postal, no estaba claro cuándo recibiría mi tarjeta de residencia, lo que significaba que no podía salir del país. El 27 de diciembre llegó mi tarjeta de residencia y, como todavía tenía algo de tiempo antes de que empezara mi nuevo trabajo, decidí hacer un viaje a Ecuador.
 
-Como este fue un viaje de último minuto, se lo hice una sorpresa a mi familia. Llegué a Guayaquil el 30 de diciembre tarde en la noche (después de algunos retrasos). Afortunadamente mi hermana aún estaba despierta y pudo recogerme en el aeropuerto. Pasé los siguientes días con mi familia en Guayaquil, disfrutando de la comida local y poniéndome al día con todos.
+Como este fue un viaje de último minuto, se lo hice una sorpresa a mi familia. Llegué a Guayaquil el 30 de diciembre tarde en la noche (después de algunos retrasos). Afortunadamente mi hermana aún estaba despierta y pudo recogerme en el aeropuerto. Mis padres estaban súper felices de verme al día siguiente. Mi papá jura que sabía que venía, pero mi mamá estaba genuinamente sorprendida. Estaban enojados porque no traje a Rachel, jaja (ella ya no tenía más días de vacaciones).
 
 Por supuesto, lo primero que hice a la mañana siguiente fue tomar encebollado :).
 

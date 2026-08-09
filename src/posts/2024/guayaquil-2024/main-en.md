@@ -10,7 +10,7 @@ counterpart: main-es
 
 This was an unexpected trip to Guayaquil. Rachel and I had just visited her family in Halifax for Christmas and we were not planning to go to Ecuador. While earlier in the year we did plan to visit Ecuador, I had just applied for Permanent Residency in Canada and due to mailing strikes it wasn't clear when I would receive my PR card, meaning I couldn't leave the country. On December 27th my PR card arrived since I still had some time until my new job started, I decided to take a trip to Ecuador. 
 
-Since this was a last-minute trip, I made it a surprise for my family. I arrived in Guayaquil on December 30th late at night (after some delays). Thankfully my sister was still awake and was able to pick me up from the airport. I spent the next few days with my family in Guayaquil, enjoying the local cuisine and catching up with everyone.
+Since this was a last-minute trip, I made it a surprise for my family. I arrived in Guayaquil on December 30th late at night (after some delays). Thankfully my sister was still awake and was able to pick me up from the airport. My parents were super happy to see me the next day. My dad swears that he knew I was coming but my mom was genuinely surprised. They were mad I didn't bring Rachel, lol (she had no more vacation days).
 
 Of course, the first thing to do next morning was to have encebollado :).
 
