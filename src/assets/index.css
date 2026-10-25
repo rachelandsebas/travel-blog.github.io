@@ -232,6 +232,17 @@
   --border-color: #cce9f5;
 }
 
+/* Theme: Italy (Tricolore Green & Red) */
+.theme-italy {
+  --bg-color: #f7fff8;
+  --primary-color: #009246;
+  /* Flag Green */
+  --accent-color: #ce2b37;
+  /* Flag Red */
+  --card-bg: #ffffff;
+  --border-color: #e3f2e6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

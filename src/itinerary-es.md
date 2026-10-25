@@ -1,5 +1,2 @@
-## Itirerario Viajero
-- **4 - 10 de Julio:** Sebastián en Corea del Sur (ICML 2026)
-- **11 - 20 de Julio:** Sebastián en China (IMO 2026)
-- **19 - 24 de Julio:** Sebastián & Rachel en China (Shanghai & Beijing)
-- **25 de Julio - 3 de Agosto:** Sebastián & Rachel en Japón (Osaka, Kioto, Hiroshima, Tokio)
+## Itinerario Viajero
+- **24 de octubre - 1 de noviembre:** Sebastián y Rachel en Italia (Roma). Sebastián está aquí por una conferencia de trabajo, y de paso hicieron un viaje.
